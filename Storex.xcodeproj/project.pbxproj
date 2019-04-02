@@ -8,20 +8,74 @@
 
 /* Begin PBXBuildFile section */
 		266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5782253010300FCEE5A /* AppDelegate.swift */; };
-		266AC57B2253010300FCEE5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC57A2253010300FCEE5A /* ViewController.swift */; };
-		266AC57E2253010300FCEE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266AC57C2253010300FCEE5A /* Main.storyboard */; };
 		266AC5802253010500FCEE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266AC57F2253010500FCEE5A /* Assets.xcassets */; };
 		266AC5832253010500FCEE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266AC5812253010500FCEE5A /* LaunchScreen.storyboard */; };
+		266AC5A82253014C00FCEE5A /* knUIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC58E2253014B00FCEE5A /* knUIMaker.swift */; };
+		266AC5A92253014C00FCEE5A /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC58F2253014B00FCEE5A /* DeviceType.swift */; };
+		266AC5AA2253014C00FCEE5A /* 1.StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5902253014B00FCEE5A /* 1.StartPoint.swift */; };
+		266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5912253014B00FCEE5A /* IntExtension.swift */; };
+		266AC5AC2253014C00FCEE5A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5922253014B00FCEE5A /* UIViewControllerExtension.swift */; };
+		266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5932253014B00FCEE5A /* UIViewExtension.swift */; };
+		266AC5AE2253014C00FCEE5A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5942253014B00FCEE5A /* DateExtension.swift */; };
+		266AC5AF2253014C00FCEE5A /* knGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5952253014B00FCEE5A /* knGridView.swift */; };
+		266AC5B02253014C00FCEE5A /* knController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5962253014C00FCEE5A /* knController.swift */; };
+		266AC5B12253014C00FCEE5A /* knListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5972253014C00FCEE5A /* knListView.swift */; };
+		266AC5B22253014C00FCEE5A /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5982253014C00FCEE5A /* UIImageExtension.swift */; };
+		266AC5B32253014C00FCEE5A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5992253014C00FCEE5A /* UIColorExtension.swift */; };
+		266AC5B42253014C00FCEE5A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59A2253014C00FCEE5A /* UIButtonExtension.swift */; };
+		266AC5B52253014C00FCEE5A /* OtherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59B2253014C00FCEE5A /* OtherExtensions.swift */; };
+		266AC5B62253014C00FCEE5A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59C2253014C00FCEE5A /* UIFontExtension.swift */; };
+		266AC5B72253014C00FCEE5A /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59D2253014C00FCEE5A /* KMPlaceholderTextView.swift */; };
+		266AC5B82253014C00FCEE5A /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59E2253014C00FCEE5A /* General.swift */; };
+		266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC59F2253014C00FCEE5A /* UITextFieldExtension.swift */; };
+		266AC5BA2253014C00FCEE5A /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A02253014C00FCEE5A /* NavigationExtension.swift */; };
+		266AC5BB2253014C00FCEE5A /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A12253014C00FCEE5A /* UISearchBarExtension.swift */; };
+		266AC5BC2253014C00FCEE5A /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A22253014C00FCEE5A /* ServiceConnector.swift */; };
+		266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A32253014C00FCEE5A /* UIApplicationExtension.swift */; };
+		266AC5BE2253014C00FCEE5A /* 1.Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A42253014C00FCEE5A /* 1.Setting.swift */; };
+		266AC5BF2253014C00FCEE5A /* knView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A52253014C00FCEE5A /* knView.swift */; };
+		266AC5C02253014C00FCEE5A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A62253014C00FCEE5A /* StringExtension.swift */; };
+		266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A72253014C00FCEE5A /* knConstraints.swift */; };
+		266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */; };
+		44BBE561C21CE23E0831F8A1 /* Pods_Storex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_Storex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storex.debug.xcconfig"; path = "Target Support Files/Pods-Storex/Pods-Storex.debug.xcconfig"; sourceTree = "<group>"; };
 		266AC5752253010300FCEE5A /* Storex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266AC5782253010300FCEE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		266AC57A2253010300FCEE5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		266AC57D2253010300FCEE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		266AC57F2253010500FCEE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266AC5822253010500FCEE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		266AC5842253010500FCEE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266AC58E2253014B00FCEE5A /* knUIMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knUIMaker.swift; sourceTree = "<group>"; };
+		266AC58F2253014B00FCEE5A /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		266AC5902253014B00FCEE5A /* 1.StartPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1.StartPoint.swift; sourceTree = "<group>"; };
+		266AC5912253014B00FCEE5A /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		266AC5922253014B00FCEE5A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		266AC5932253014B00FCEE5A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		266AC5942253014B00FCEE5A /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		266AC5952253014B00FCEE5A /* knGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knGridView.swift; sourceTree = "<group>"; };
+		266AC5962253014C00FCEE5A /* knController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knController.swift; sourceTree = "<group>"; };
+		266AC5972253014C00FCEE5A /* knListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knListView.swift; sourceTree = "<group>"; };
+		266AC5982253014C00FCEE5A /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		266AC5992253014C00FCEE5A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		266AC59A2253014C00FCEE5A /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		266AC59B2253014C00FCEE5A /* OtherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExtensions.swift; sourceTree = "<group>"; };
+		266AC59C2253014C00FCEE5A /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		266AC59D2253014C00FCEE5A /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		266AC59E2253014C00FCEE5A /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		266AC59F2253014C00FCEE5A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		266AC5A02253014C00FCEE5A /* NavigationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
+		266AC5A12253014C00FCEE5A /* UISearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
+		266AC5A22253014C00FCEE5A /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
+		266AC5A32253014C00FCEE5A /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		266AC5A42253014C00FCEE5A /* 1.Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1.Setting.swift; sourceTree = "<group>"; };
+		266AC5A52253014C00FCEE5A /* knView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knView.swift; sourceTree = "<group>"; };
+		266AC5A62253014C00FCEE5A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		266AC5A72253014C00FCEE5A /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
+		266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+Keyboard.swift"; sourceTree = "<group>"; };
+		73082604FD360A5F3378C76E /* Pods_Storex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storex.release.xcconfig"; path = "Target Support Files/Pods-Storex/Pods-Storex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BBE561C21CE23E0831F8A1 /* Pods_Storex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +95,8 @@
 			children = (
 				266AC5772253010300FCEE5A /* Storex */,
 				266AC5762253010300FCEE5A /* Products */,
+				8EEE5ADA11EFC1911A0AECED /* Pods */,
+				F7989F655C8D9032648A3D06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +111,88 @@
 		266AC5772253010300FCEE5A /* Storex */ = {
 			isa = PBXGroup;
 			children = (
-				266AC5782253010300FCEE5A /* AppDelegate.swift */,
-				266AC57A2253010300FCEE5A /* ViewController.swift */,
-				266AC57C2253010300FCEE5A /* Main.storyboard */,
-				266AC57F2253010500FCEE5A /* Assets.xcassets */,
-				266AC5812253010500FCEE5A /* LaunchScreen.storyboard */,
-				266AC5842253010500FCEE5A /* Info.plist */,
+				266AC58C2253013800FCEE5A /* Libs */,
+				266AC5C22253015900FCEE5A /* Config */,
+				266AC5C32253016200FCEE5A /* Resources */,
 			);
 			path = Storex;
+			sourceTree = "<group>";
+		};
+		266AC58C2253013800FCEE5A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				266AC58D2253014200FCEE5A /* knStore */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		266AC58D2253014200FCEE5A /* knStore */ = {
+			isa = PBXGroup;
+			children = (
+				266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */,
+				266AC5A42253014C00FCEE5A /* 1.Setting.swift */,
+				266AC5902253014B00FCEE5A /* 1.StartPoint.swift */,
+				266AC5942253014B00FCEE5A /* DateExtension.swift */,
+				266AC58F2253014B00FCEE5A /* DeviceType.swift */,
+				266AC59E2253014C00FCEE5A /* General.swift */,
+				266AC5912253014B00FCEE5A /* IntExtension.swift */,
+				266AC59D2253014C00FCEE5A /* KMPlaceholderTextView.swift */,
+				266AC5A72253014C00FCEE5A /* knConstraints.swift */,
+				266AC5962253014C00FCEE5A /* knController.swift */,
+				266AC5952253014B00FCEE5A /* knGridView.swift */,
+				266AC5972253014C00FCEE5A /* knListView.swift */,
+				266AC58E2253014B00FCEE5A /* knUIMaker.swift */,
+				266AC5A52253014C00FCEE5A /* knView.swift */,
+				266AC5A02253014C00FCEE5A /* NavigationExtension.swift */,
+				266AC59B2253014C00FCEE5A /* OtherExtensions.swift */,
+				266AC5A22253014C00FCEE5A /* ServiceConnector.swift */,
+				266AC5A62253014C00FCEE5A /* StringExtension.swift */,
+				266AC5A32253014C00FCEE5A /* UIApplicationExtension.swift */,
+				266AC59A2253014C00FCEE5A /* UIButtonExtension.swift */,
+				266AC5992253014C00FCEE5A /* UIColorExtension.swift */,
+				266AC59C2253014C00FCEE5A /* UIFontExtension.swift */,
+				266AC5982253014C00FCEE5A /* UIImageExtension.swift */,
+				266AC5A12253014C00FCEE5A /* UISearchBarExtension.swift */,
+				266AC59F2253014C00FCEE5A /* UITextFieldExtension.swift */,
+				266AC5922253014B00FCEE5A /* UIViewControllerExtension.swift */,
+				266AC5932253014B00FCEE5A /* UIViewExtension.swift */,
+			);
+			path = knStore;
+			sourceTree = "<group>";
+		};
+		266AC5C22253015900FCEE5A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				266AC5782253010300FCEE5A /* AppDelegate.swift */,
+				266AC5842253010500FCEE5A /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		266AC5C32253016200FCEE5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				266AC57F2253010500FCEE5A /* Assets.xcassets */,
+				266AC5812253010500FCEE5A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EEE5ADA11EFC1911A0AECED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */,
+				CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7989F655C8D9032648A3D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73082604FD360A5F3378C76E /* Pods_Storex.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 266AC5872253010500FCEE5A /* Build configuration list for PBXNativeTarget "Storex" */;
 			buildPhases = (
+				D84111ED86ABB708801B1935 /* [CP] Check Pods Manifest.lock */,
 				266AC5712253010300FCEE5A /* Sources */,
 				266AC5722253010300FCEE5A /* Frameworks */,
 				266AC5732253010300FCEE5A /* Resources */,
+				E454DB59D3A430EF4AB99B23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +257,99 @@
 			files = (
 				266AC5832253010500FCEE5A /* LaunchScreen.storyboard in Resources */,
 				266AC5802253010500FCEE5A /* Assets.xcassets in Resources */,
-				266AC57E2253010300FCEE5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D84111ED86ABB708801B1935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Storex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E454DB59D3A430EF4AB99B23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Storex/Pods-Storex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Storex/Pods-Storex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		266AC5712253010300FCEE5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266AC57B2253010300FCEE5A /* ViewController.swift in Sources */,
+				266AC5B32253014C00FCEE5A /* UIColorExtension.swift in Sources */,
+				266AC5BA2253014C00FCEE5A /* NavigationExtension.swift in Sources */,
+				266AC5B62253014C00FCEE5A /* UIFontExtension.swift in Sources */,
+				266AC5B52253014C00FCEE5A /* OtherExtensions.swift in Sources */,
+				266AC5C02253014C00FCEE5A /* StringExtension.swift in Sources */,
+				266AC5AF2253014C00FCEE5A /* knGridView.swift in Sources */,
+				266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */,
+				266AC5BE2253014C00FCEE5A /* 1.Setting.swift in Sources */,
+				266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */,
+				266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */,
+				266AC5BF2253014C00FCEE5A /* knView.swift in Sources */,
+				266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */,
+				266AC5B02253014C00FCEE5A /* knController.swift in Sources */,
+				266AC5A92253014C00FCEE5A /* DeviceType.swift in Sources */,
+				266AC5B72253014C00FCEE5A /* KMPlaceholderTextView.swift in Sources */,
 				266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */,
+				266AC5BB2253014C00FCEE5A /* UISearchBarExtension.swift in Sources */,
+				266AC5A82253014C00FCEE5A /* knUIMaker.swift in Sources */,
+				266AC5AE2253014C00FCEE5A /* DateExtension.swift in Sources */,
+				266AC5AA2253014C00FCEE5A /* 1.StartPoint.swift in Sources */,
+				266AC5AC2253014C00FCEE5A /* UIViewControllerExtension.swift in Sources */,
+				266AC5B22253014C00FCEE5A /* UIImageExtension.swift in Sources */,
+				266AC5B42253014C00FCEE5A /* UIButtonExtension.swift in Sources */,
+				266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */,
+				266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */,
+				266AC5B82253014C00FCEE5A /* General.swift in Sources */,
+				266AC5B12253014C00FCEE5A /* knListView.swift in Sources */,
+				266AC5BC2253014C00FCEE5A /* ServiceConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		266AC57C2253010300FCEE5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				266AC57D2253010300FCEE5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		266AC5812253010500FCEE5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,10 +479,12 @@
 		};
 		266AC5882253010500FCEE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Storex/Info.plist;
+				DEVELOPMENT_TEAM = YM62LBZ4XN;
+				INFOPLIST_FILE = "$(SRCROOT)/Storex/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +498,12 @@
 		};
 		266AC5892253010500FCEE5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Storex/Info.plist;
+				DEVELOPMENT_TEAM = YM62LBZ4XN;
+				INFOPLIST_FILE = "$(SRCROOT)/Storex/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
