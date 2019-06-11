@@ -280,6 +280,13 @@ extension UIView {
     }
     
     @discardableResult
+    public func horizontalSuperview(space: CGFloat = 0, isActive: Bool = true) ->
+        (left: NSLayoutConstraint, right: NSLayoutConstraint)? {
+            guard let view = superview else { return nil }
+            return horizontal(toView: view)
+    }
+    
+    @discardableResult
     public func horizontal(toView view: UIView, leftPadding: CGFloat, rightPadding: CGFloat, isActive: Bool = true)
         -> (left: NSLayoutConstraint, right: NSLayoutConstraint) {
             let left = leftAnchor.constraint(equalTo: view.leftAnchor, constant: leftPadding)
@@ -297,6 +304,13 @@ extension UIView {
             top.isActive = isActive
             bottom.isActive = isActive
             return (top, bottom)
+    }
+    
+    @discardableResult
+    public func verticalSuperview(space: CGFloat = 0, isActive: Bool = true)
+        -> (top: NSLayoutConstraint, bottom: NSLayoutConstraint)? {
+            guard let view = superview else { return nil }
+            return vertical(toView: view)
     }
     
     @discardableResult
@@ -318,6 +332,95 @@ extension UIView {
             let topCons = top(toView: view, space: space.top, isActive: isActive)
             let bottomCons = bottom(toView: view, space: -space.bottom, isActive: isActive)
             return (leftCons, topCons, rightCons, bottomCons)
+    }
+    
+    func fillSuperView(space: UIEdgeInsets = .zero) {
+        guard let view = superview else { return }
+        fill(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func leftSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return left(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func rightSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return right(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func topSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return top(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func bottomSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return bottom(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func centerXSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return centerX(toView: view, space: space)
+    }
+    
+    @discardableResult
+    func centerYSuperView(space: CGFloat = 0, isActive: Bool = true) -> NSLayoutConstraint? {
+        guard let view = superview else { return nil }
+        return centerY(toView: view, space: space)
+    }
+    
+    enum StackStickType {
+        case left, right, horizontal
+        case top, bottom, vertical
+        case none
+    }
+    
+    func stackHorizontally(views: [UIView],
+                           viewSpaces: CGFloat = 0,
+                           leftSpace: CGFloat? = nil,
+                           rightSpace: CGFloat? = nil) {
+        var constraintsString = "H:"
+        if let space = leftSpace {
+            constraintsString += "|-\(space)-"
+        }
+        
+        for i in 0 ..< views.count - 1 {
+            constraintsString += "[v\(i)]-\(viewSpaces)-"
+        }
+        
+        constraintsString += "[v\(views.count - 1)]"
+        
+        if let space = rightSpace {
+            constraintsString += "-\(space)-|"
+        }
+        addConstraints(withFormat: constraintsString, arrayOf: views)
+    }
+    
+    func stackVertically(views: [UIView],
+                         viewSpaces: CGFloat,
+                         topSpace: CGFloat? = nil,
+                         bottomSpace: CGFloat? = nil) {
+        var constraintsString = "V:"
+        if let space = topSpace {
+            constraintsString += "|-\(space)-"
+        }
+        
+        for i in 0 ..< views.count - 1 {
+            constraintsString += "[v\(i)]-\(viewSpaces)-"
+        }
+        
+        constraintsString += "[v\(views.count - 1)]"
+        
+        if let space = bottomSpace {
+            constraintsString += "-\(space)-|"
+        }
+        addConstraints(withFormat: constraintsString, arrayOf: views)
     }
 }
 

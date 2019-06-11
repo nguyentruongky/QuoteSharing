@@ -23,7 +23,7 @@ class UIMaker {
     }
 
     static func makeLabel(text: String? = nil,
-                          font: UIFont = .systemFont(ofSize: 15),
+                          font: UIFont = UIFont.main(),
                           color: UIColor = .black,
                           numberOfLines: Int = 1,
                           alignment: NSTextAlignment = .left) -> UILabel {
@@ -55,7 +55,7 @@ class UIMaker {
 
     static func makeTextField(text: String? = nil,
                               placeholder: String? = nil,
-                              font: UIFont = .systemFont(ofSize: 15),
+                              font: UIFont = UIFont.main(),
                               color: UIColor = .black,
                               alignment: NSTextAlignment = .left) -> UITextField {
         let tf = UITextField()
@@ -71,7 +71,7 @@ class UIMaker {
 
     static func makeButton(title: String? = nil,
                            titleColor: UIColor = .black,
-                           font: UIFont? = nil,
+                           font: UIFont = UIFont.main(),
                            background: UIColor = .clear,
                            cornerRadius: CGFloat = 0,
                            borderWidth: CGFloat = 0,
@@ -112,7 +112,7 @@ class UIMaker {
     }
 
     static func makeMainButton(title: String,
-                               bgColor: UIColor = UIColor.gray,
+                               bgColor: UIColor = UIColor.c_main,
                                titleColor: UIColor = UIColor.white,
                                font: UIFont = UIFont.main(.bold, size: 18)) -> UIButton {
         let button = UIButton()

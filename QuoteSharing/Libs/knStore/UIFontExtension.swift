@@ -10,12 +10,12 @@ import UIKit
 
 extension UIFont {
     enum knWeight: String {
-        case black = "Muli-Black"
-        case bold = "Muli-Bold"
-        case medium = "Muli-SemiBold"
-        case regular = "Muli-Regular"
+        case light = "Montserrat-Light"
+        case semibold = "Montserrat-SemiBold"
+        case regular = "Montserrat-Medium"
+        case bold = "Montserrat-ExtraBold"
     }
-
+    
     static func main(_ weight: knWeight = .regular, size: CGFloat = 15) -> UIFont {
         return font(weight.rawValue, size: size)
     }
@@ -25,4 +25,3 @@ extension UIFont {
         return font
     }
 }
-

@@ -37,12 +37,21 @@
 		266AC5C02253014C00FCEE5A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A62253014C00FCEE5A /* StringExtension.swift */; };
 		266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A72253014C00FCEE5A /* knConstraints.swift */; };
 		266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */; };
-		44BBE561C21CE23E0831F8A1 /* Pods_Storex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_Storex.framework */; };
+		26C2813322AF5A730058910B /* AddBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813222AF5A730058910B /* AddBook.swift */; };
+		26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813522AF5AE00058910B /* AddBookUI.swift */; };
+		26C2814322AF5BDA0058910B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813C22AF5BD90058910B /* Colors.swift */; };
+		26C2814A22AF631A0058910B /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813B22AF5BD90058910B /* Montserrat-ExtraBold.ttf */; };
+		26C2814B22AF631A0058910B /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813E22AF5BD90058910B /* Montserrat-Light.ttf */; };
+		26C2814C22AF631A0058910B /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813D22AF5BD90058910B /* Montserrat-Medium.ttf */; };
+		26C2814D22AF631A0058910B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */; };
+		26C2814E22AF631A0058910B /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */; };
+		26C2815022AF67E40058910B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C2814F22AF67E40058910B /* GoogleService-Info.plist */; };
+		44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storex.debug.xcconfig"; path = "Target Support Files/Pods-Storex/Pods-Storex.debug.xcconfig"; sourceTree = "<group>"; };
-		266AC5752253010300FCEE5A /* Storex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A980369AC42516C1E257CE9 /* Pods-QuoteSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.debug.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		266AC5752253010300FCEE5A /* QuoteSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266AC5782253010300FCEE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266AC57F2253010500FCEE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266AC5822253010500FCEE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,8 +83,17 @@
 		266AC5A62253014C00FCEE5A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		266AC5A72253014C00FCEE5A /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
 		266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+Keyboard.swift"; sourceTree = "<group>"; };
-		73082604FD360A5F3378C76E /* Pods_Storex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storex.release.xcconfig"; path = "Target Support Files/Pods-Storex/Pods-Storex.release.xcconfig"; sourceTree = "<group>"; };
+		26C2813222AF5A730058910B /* AddBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBook.swift; sourceTree = "<group>"; };
+		26C2813522AF5AE00058910B /* AddBookUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookUI.swift; sourceTree = "<group>"; };
+		26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		26C2813B22AF5BD90058910B /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		26C2813C22AF5BD90058910B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		26C2813D22AF5BD90058910B /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		26C2813E22AF5BD90058910B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		26C2814F22AF67E40058910B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.release.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BBE561C21CE23E0831F8A1 /* Pods_Storex.framework in Frameworks */,
+				44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +111,7 @@
 		266AC56C2253010300FCEE5A = {
 			isa = PBXGroup;
 			children = (
-				266AC5772253010300FCEE5A /* Storex */,
+				266AC5772253010300FCEE5A /* QuoteSharing */,
 				266AC5762253010300FCEE5A /* Products */,
 				8EEE5ADA11EFC1911A0AECED /* Pods */,
 				F7989F655C8D9032648A3D06 /* Frameworks */,
@@ -103,19 +121,20 @@
 		266AC5762253010300FCEE5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				266AC5752253010300FCEE5A /* Storex.app */,
+				266AC5752253010300FCEE5A /* QuoteSharing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		266AC5772253010300FCEE5A /* Storex */ = {
+		266AC5772253010300FCEE5A /* QuoteSharing */ = {
 			isa = PBXGroup;
 			children = (
+				26C2813122AF5A660058910B /* Features */,
 				266AC58C2253013800FCEE5A /* Libs */,
 				266AC5C22253015900FCEE5A /* Config */,
 				266AC5C32253016200FCEE5A /* Resources */,
 			);
-			path = Storex;
+			path = QuoteSharing;
 			sourceTree = "<group>";
 		};
 		266AC58C2253013800FCEE5A /* Libs */ = {
@@ -130,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */,
-				266AC5A42253014C00FCEE5A /* 1.Setting.swift */,
 				266AC5902253014B00FCEE5A /* 1.StartPoint.swift */,
 				266AC5942253014B00FCEE5A /* DateExtension.swift */,
 				266AC58F2253014B00FCEE5A /* DeviceType.swift */,
@@ -163,7 +181,9 @@
 		266AC5C22253015900FCEE5A /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				266AC5A42253014C00FCEE5A /* 1.Setting.swift */,
 				266AC5782253010300FCEE5A /* AppDelegate.swift */,
+				26C2814F22AF67E40058910B /* GoogleService-Info.plist */,
 				266AC5842253010500FCEE5A /* Info.plist */,
 			);
 			path = Config;
@@ -172,17 +192,48 @@
 		266AC5C32253016200FCEE5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				26C2814722AF5BDF0058910B /* Fonts */,
 				266AC57F2253010500FCEE5A /* Assets.xcassets */,
 				266AC5812253010500FCEE5A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		26C2813122AF5A660058910B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				26C2813422AF5ACF0058910B /* AddBook */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		26C2813422AF5ACF0058910B /* AddBook */ = {
+			isa = PBXGroup;
+			children = (
+				26C2813222AF5A730058910B /* AddBook.swift */,
+				26C2813522AF5AE00058910B /* AddBookUI.swift */,
+			);
+			path = AddBook;
+			sourceTree = "<group>";
+		};
+		26C2814722AF5BDF0058910B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26C2813C22AF5BD90058910B /* Colors.swift */,
+				26C2813B22AF5BD90058910B /* Montserrat-ExtraBold.ttf */,
+				26C2813E22AF5BD90058910B /* Montserrat-Light.ttf */,
+				26C2813D22AF5BD90058910B /* Montserrat-Medium.ttf */,
+				26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */,
+				26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		8EEE5ADA11EFC1911A0AECED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */,
-				CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */,
+				1A980369AC42516C1E257CE9 /* Pods-QuoteSharing.debug.xcconfig */,
+				CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,7 +241,7 @@
 		F7989F655C8D9032648A3D06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73082604FD360A5F3378C76E /* Pods_Storex.framework */,
+				73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		266AC5742253010300FCEE5A /* Storex */ = {
+		266AC5742253010300FCEE5A /* QuoteSharing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 266AC5872253010500FCEE5A /* Build configuration list for PBXNativeTarget "Storex" */;
+			buildConfigurationList = 266AC5872253010500FCEE5A /* Build configuration list for PBXNativeTarget "QuoteSharing" */;
 			buildPhases = (
 				D84111ED86ABB708801B1935 /* [CP] Check Pods Manifest.lock */,
 				266AC5712253010300FCEE5A /* Sources */,
@@ -212,9 +263,9 @@
 			);
 			dependencies = (
 			);
-			name = Storex;
-			productName = Storex;
-			productReference = 266AC5752253010300FCEE5A /* Storex.app */;
+			name = QuoteSharing;
+			productName = QuoteSharing;
+			productReference = 266AC5752253010300FCEE5A /* QuoteSharing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 266AC5702253010300FCEE5A /* Build configuration list for PBXProject "Storex" */;
+			buildConfigurationList = 266AC5702253010300FCEE5A /* Build configuration list for PBXProject "QuoteSharing" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				266AC5742253010300FCEE5A /* Storex */,
+				266AC5742253010300FCEE5A /* QuoteSharing */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +306,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C2814D22AF631A0058910B /* Montserrat-Regular.ttf in Resources */,
+				26C2815022AF67E40058910B /* GoogleService-Info.plist in Resources */,
+				26C2814B22AF631A0058910B /* Montserrat-Light.ttf in Resources */,
+				26C2814C22AF631A0058910B /* Montserrat-Medium.ttf in Resources */,
+				26C2814E22AF631A0058910B /* Montserrat-SemiBold.ttf in Resources */,
 				266AC5832253010500FCEE5A /* LaunchScreen.storyboard in Resources */,
+				26C2814A22AF631A0058910B /* Montserrat-ExtraBold.ttf in Resources */,
 				266AC5802253010500FCEE5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +335,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Storex-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QuoteSharing-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -293,20 +350,36 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Storex/Pods-Storex-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Storex/Pods-Storex-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -325,6 +398,7 @@
 				266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */,
 				266AC5BE2253014C00FCEE5A /* 1.Setting.swift in Sources */,
 				266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */,
+				26C2813322AF5A730058910B /* AddBook.swift in Sources */,
 				266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */,
 				266AC5BF2253014C00FCEE5A /* knView.swift in Sources */,
 				266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */,
@@ -339,6 +413,8 @@
 				266AC5AC2253014C00FCEE5A /* UIViewControllerExtension.swift in Sources */,
 				266AC5B22253014C00FCEE5A /* UIImageExtension.swift in Sources */,
 				266AC5B42253014C00FCEE5A /* UIButtonExtension.swift in Sources */,
+				26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */,
+				26C2814322AF5BDA0058910B /* Colors.swift in Sources */,
 				266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */,
 				266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */,
 				266AC5B82253014C00FCEE5A /* General.swift in Sources */,
@@ -479,17 +555,17 @@
 		};
 		266AC5882253010500FCEE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A980369AC42516C1E257CE9 /* Pods-Storex.debug.xcconfig */;
+			baseConfigurationReference = 1A980369AC42516C1E257CE9 /* Pods-QuoteSharing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM62LBZ4XN;
-				INFOPLIST_FILE = "$(SRCROOT)/Storex/Config/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/QuoteSharing/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kynguyen.Storex;
+				PRODUCT_BUNDLE_IDENTIFIER = me.kynguyen.quotesharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,17 +574,17 @@
 		};
 		266AC5892253010500FCEE5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBBA81579447E8B563457896 /* Pods-Storex.release.xcconfig */;
+			baseConfigurationReference = CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YM62LBZ4XN;
-				INFOPLIST_FILE = "$(SRCROOT)/Storex/Config/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/QuoteSharing/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kynguyen.Storex;
+				PRODUCT_BUNDLE_IDENTIFIER = me.kynguyen.quotesharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,7 +594,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		266AC5702253010300FCEE5A /* Build configuration list for PBXProject "Storex" */ = {
+		266AC5702253010300FCEE5A /* Build configuration list for PBXProject "QuoteSharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266AC5852253010500FCEE5A /* Debug */,
@@ -527,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		266AC5872253010500FCEE5A /* Build configuration list for PBXNativeTarget "Storex" */ = {
+		266AC5872253010500FCEE5A /* Build configuration list for PBXNativeTarget "QuoteSharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266AC5882253010500FCEE5A /* Debug */,
