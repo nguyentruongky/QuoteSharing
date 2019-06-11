@@ -11,11 +11,11 @@ import Foundation
 
 struct AddBookWorker {
     var book: Book
-    var success: ((Book) -> Void)?
+    var success: (() -> Void)?
     var fail: ((knError) -> Void)?
     
     init(book: Book,
-         success: ((Book) -> Void)?,
+         success: (() -> Void)?,
          fail: ((knError) -> Void)?) {
         self.book = book
         self.success = success
@@ -35,9 +35,8 @@ struct AddBookWorker {
                                     DB().getCollection(.books)
                                         .document(id)
                                         .updateData(["cover": url])
+                                    self.success?()
             })
         }
-        
-        success?(book)
     }
 }

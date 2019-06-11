@@ -35,14 +35,17 @@ private extension AddBookController {
 
 extension AddBookController {
     @objc func saveBook() {
+        ui.addButton.setProcess(visible: true)
+        hideKeyboard()
+        
         let book = Book()
         book.title = ui.titleTextField.text
         book.author = ui.authorTextField.text
         book.coverImage = ui.coverImageView.image
-        AddBookWorker(book: book, success: { _ in
-            
-        }, fail: { error in
-            
+        AddBookWorker(book: book, success: { [weak self] in
+            self?.ui.addButton.setProcess(visible: false)
+        }, fail: { [weak self] error in
+            self?.ui.addButton.setProcess(visible: false)
         }).execute()
     }
     

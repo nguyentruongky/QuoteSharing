@@ -19,6 +19,13 @@ class Book {
         id = UUID().uuidString
     }
     
+    init(rawData: AnyObject) {
+        id = rawData["id"] as? String ?? UUID().uuidString
+        title = rawData["title"] as? String
+        author = rawData["author"] as? String
+        cover = rawData["cover"] as? String
+    }
+    
     func toDict() -> [String: Any] {
         var dict = ["id": id]
         if let data = title {

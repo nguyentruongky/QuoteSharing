@@ -23,7 +23,7 @@ class knGridView<C: knGridCell<U>, U>: knView, UICollectionViewDelegate, UIColle
     var columnSpacing: CGFloat = 0
     
     override func setupView() {
-        guard let layout = layout else { fatalError() }
+        layout = layout ?? UICollectionViewFlowLayout()
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .white
@@ -80,7 +80,7 @@ class GridController<C: knGridCell<U>, U>: knController, UICollectionViewDelegat
     }
     
     override func setupView() {
-        guard let layout = layout else { fatalError() }
+        layout = layout ?? UICollectionViewFlowLayout()
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .white

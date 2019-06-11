@@ -21,9 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setupApp() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = wrap(AddBookController())
+        window!.rootViewController = wrap(BookShelfController())
         window!.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
+    }
+    
+    @objc func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 

@@ -283,7 +283,7 @@ extension UIView {
     public func horizontalSuperview(space: CGFloat = 0, isActive: Bool = true) ->
         (left: NSLayoutConstraint, right: NSLayoutConstraint)? {
             guard let view = superview else { return nil }
-            return horizontal(toView: view)
+            return horizontal(toView: view, space: space)
     }
     
     @discardableResult
