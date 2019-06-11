@@ -18,7 +18,8 @@ extension AddBookController {
                                                     color: .c_main)
         let coverImageView = UIMaker.makeImageView()
         let addButton = UIMaker.makeMainButton(title: "Add book")
-        
+        let selectPhotoButton = UIMaker.makeButton(image: UIImage(named: "camera"))
+
         func setupView() -> [knTableCell] {
             let coverCell = makeCoverImageCell()
             coverCell.height(400)
@@ -48,16 +49,16 @@ private extension AddBookController.UI {
     
     func makeCoverImageCell() -> knTableCell {
         let label = UIMaker.makeLabel(text: "Book cover", color: .c_secondary)
-        let button = UIMaker.makeButton(image: UIImage(named: "camera"))
-        button.imageEdgeInsets = UIEdgeInsets(space: 6)
+
+        selectPhotoButton.imageEdgeInsets = UIEdgeInsets(space: 6)
         let cell = knTableCell()
-        cell.addSubviews(views: label, button, coverImageView)
+        cell.addSubviews(views: label, selectPhotoButton, coverImageView)
         label.leftSuperView(space: space)
         label.topSuperView(space: space * 1.5)
         
-        button.square(edge: 44)
-        button.centerY(toView: label)
-        button.leftHorizontalSpacing(toView: label, space: -space)
+        selectPhotoButton.square(edge: 44)
+        selectPhotoButton.centerY(toView: label)
+        selectPhotoButton.leftHorizontalSpacing(toView: label, space: -space)
         
         coverImageView.horizontalSuperview()
         coverImageView.verticalSpacing(toView: label, space: space)

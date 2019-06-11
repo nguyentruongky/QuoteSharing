@@ -46,6 +46,11 @@
 		26C2814D22AF631A0058910B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */; };
 		26C2814E22AF631A0058910B /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */; };
 		26C2815022AF67E40058910B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C2814F22AF67E40058910B /* GoogleService-Info.plist */; };
+		26D9897522AF73A9007DA40D /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897422AF73A9007DA40D /* DB.swift */; };
+		26D9897722AF8158007DA40D /* AddBookWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897622AF8158007DA40D /* AddBookWorker.swift */; };
+		26D9897922AF815C007DA40D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897822AF815C007DA40D /* Book.swift */; };
+		26D9897B22AF8362007DA40D /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897A22AF8362007DA40D /* FileStorage.swift */; };
+		26D9897D22AF880D007DA40D /* knPhotoSelectWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897C22AF880D007DA40D /* knPhotoSelectWorker.swift */; };
 		44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +97,11 @@
 		26C2813E22AF5BD90058910B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		26C2814F22AF67E40058910B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26D9897422AF73A9007DA40D /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		26D9897622AF8158007DA40D /* AddBookWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookWorker.swift; sourceTree = "<group>"; };
+		26D9897822AF815C007DA40D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		26D9897A22AF8362007DA40D /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		26D9897C22AF880D007DA40D /* knPhotoSelectWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knPhotoSelectWorker.swift; sourceTree = "<group>"; };
 		73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.release.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +139,7 @@
 		266AC5772253010300FCEE5A /* QuoteSharing */ = {
 			isa = PBXGroup;
 			children = (
+				26D9897322AF73A9007DA40D /* Connector */,
 				26C2813122AF5A660058910B /* Features */,
 				266AC58C2253013800FCEE5A /* Libs */,
 				266AC5C22253015900FCEE5A /* Config */,
@@ -140,6 +151,7 @@
 		266AC58C2253013800FCEE5A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				26D9897C22AF880D007DA40D /* knPhotoSelectWorker.swift */,
 				266AC58D2253014200FCEE5A /* knStore */,
 			);
 			path = Libs;
@@ -211,7 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				26C2813222AF5A730058910B /* AddBook.swift */,
+				26D9897622AF8158007DA40D /* AddBookWorker.swift */,
 				26C2813522AF5AE00058910B /* AddBookUI.swift */,
+				26D9897822AF815C007DA40D /* Book.swift */,
 			);
 			path = AddBook;
 			sourceTree = "<group>";
@@ -227,6 +241,15 @@
 				26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		26D9897322AF73A9007DA40D /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				26D9897422AF73A9007DA40D /* DB.swift */,
+				26D9897A22AF8362007DA40D /* FileStorage.swift */,
+			);
+			path = Connector;
 			sourceTree = "<group>";
 		};
 		8EEE5ADA11EFC1911A0AECED /* Pods */ = {
@@ -403,17 +426,22 @@
 				266AC5BF2253014C00FCEE5A /* knView.swift in Sources */,
 				266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */,
 				266AC5B02253014C00FCEE5A /* knController.swift in Sources */,
+				26D9897722AF8158007DA40D /* AddBookWorker.swift in Sources */,
 				266AC5A92253014C00FCEE5A /* DeviceType.swift in Sources */,
+				26D9897922AF815C007DA40D /* Book.swift in Sources */,
 				266AC5B72253014C00FCEE5A /* KMPlaceholderTextView.swift in Sources */,
 				266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */,
 				266AC5BB2253014C00FCEE5A /* UISearchBarExtension.swift in Sources */,
 				266AC5A82253014C00FCEE5A /* knUIMaker.swift in Sources */,
 				266AC5AE2253014C00FCEE5A /* DateExtension.swift in Sources */,
 				266AC5AA2253014C00FCEE5A /* 1.StartPoint.swift in Sources */,
+				26D9897522AF73A9007DA40D /* DB.swift in Sources */,
 				266AC5AC2253014C00FCEE5A /* UIViewControllerExtension.swift in Sources */,
 				266AC5B22253014C00FCEE5A /* UIImageExtension.swift in Sources */,
+				26D9897B22AF8362007DA40D /* FileStorage.swift in Sources */,
 				266AC5B42253014C00FCEE5A /* UIButtonExtension.swift in Sources */,
 				26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */,
+				26D9897D22AF880D007DA40D /* knPhotoSelectWorker.swift in Sources */,
 				26C2814322AF5BDA0058910B /* Colors.swift in Sources */,
 				266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */,
 				266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */,
