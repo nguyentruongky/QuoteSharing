@@ -137,6 +137,14 @@ class knListController<C: knListCell<U>, U>: knController, UITableViewDataSource
     func didSelectRow(at indexPath: IndexPath) { }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat { return 0 }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
+    }
 }
 
 class knStaticListController: knController, UITableViewDelegate, UITableViewDataSource {

@@ -43,7 +43,7 @@ class BookCell: knGridCell<Book> {
 
 class BookShelfView: knGridView<BookCell, Book> {
     let nameLabel = UIMaker.makeLabel(font: .main(.bold, size: 25),
-                                       color: .c_dark_main)
+                                       color: .c_main)
     convenience init(name: String) {
         self.init(frame: .zero)
         nameLabel.text = name
