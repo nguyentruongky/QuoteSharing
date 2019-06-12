@@ -9,12 +9,17 @@
 import UIKit
 
 extension UIView {
-    func setBorder(_ width: CGFloat, color: UIColor) {
+    func setBorder(width: CGFloat, color: UIColor) {
         layer.borderColor = color.cgColor
         layer.borderWidth = width
     }
     
-    @objc func setCorner(radius: CGFloat) {
+    func circleCorner() {
+        superview?.layoutIfNeeded()
+        setCorner(radius: frame.width / 2)
+    }
+    
+    func setCorner(radius: CGFloat) {
         layer.cornerRadius = radius
         clipsToBounds = true
     }
@@ -50,7 +55,7 @@ extension UIView {
                            width: CGFloat = 1) {
         let gradient = CAGradientLayer()
         gradient.frame = CGRect(origin: CGPoint.zero,
-                                     size: size == .zero ? bounds.size : size)
+                                size: size == .zero ? bounds.size : size)
         gradient.colors = colors.map({ return $0.cgColor })
         
         let shape = CAShapeLayer()
@@ -69,9 +74,26 @@ extension UIView {
         animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
         layer.add(animation, forKey: "shake")
     }
-
+    
     func setEnabled(_ value: Bool) {
         isUserInteractionEnabled = value
+    }
+    
+    func zoomIn(_ isIn: Bool, complete: (() -> Void)? = nil) {
+        let initialValue: CGFloat = isIn ? 0.8 : 1
+        let endValue: CGFloat = isIn ? 1 : 0.8
+        transform = transform.scaledBy(x: initialValue , y: initialValue)
+        UIView.animate(withDuration: 0.35, delay: 0.0,
+                       usingSpringWithDamping: 0.5,
+                       initialSpringVelocity: 0.3,
+                       options: .curveEaseInOut,
+                       animations: { [weak self] in
+                        self?.transform = CGAffineTransform.identity.scaledBy(x: endValue, y: endValue)
+            }, completion: { _ in complete?() })
+    }
+    
+    func scale(value: CGFloat) {
+        transform = CGAffineTransform.identity.scaledBy(x: value, y: value)
     }
 }
 
@@ -116,7 +138,7 @@ extension UIView {
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor;
     }
-
+    
     @discardableResult
     private func _round(corners: UIRectCorner, radius: CGFloat) -> CAShapeLayer {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))

@@ -15,11 +15,13 @@ extension BookDetailController {
         let authorLabel = UIMaker.makeLabel(font: .main(size: 13),
                                             color: .c_secondary)
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
-        let readButton = UIMaker.makeMainButton(title: "Read")
+        let addQuoteButton = UIMaker.makeMainButton(title: "Add Quote")
+        let addQuoteView = AddQuoteView()
+        
         lazy var sectionHeaderView = makeSectionHeaderView()
         func makeHeaderView() -> UIView {
             coverImageView.setCorner(radius: 5)
-            coverImageView.setBorder(1, color: UIColor.lightGray)
+            coverImageView.setBorder(width: 1, color: UIColor.lightGray)
             
             let view = UIMaker.makeView(background: .white)
             view.addSubviews(views: titleLabel, authorLabel, coverImageView)
@@ -38,9 +40,9 @@ extension BookDetailController {
             authorLabel.horizontal(toView: titleLabel)
             authorLabel.verticalSpacing(toView: titleLabel, space: 4)
             
-            view.addSubviews(views: readButton)
-            readButton.horizontalSuperview(space: space)
-            readButton.verticalSpacing(toView: coverImageView, space: space)
+            view.addSubviews(views: addQuoteButton)
+            addQuoteButton.horizontalSuperview(space: space)
+            addQuoteButton.verticalSpacing(toView: coverImageView, space: space)
             
             return view
         }

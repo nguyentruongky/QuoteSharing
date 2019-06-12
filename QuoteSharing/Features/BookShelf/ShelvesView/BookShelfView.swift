@@ -23,7 +23,7 @@ class BookCell: knGridCell<Book> {
     
     override func setupView() {
         coverImageView.setCorner(radius: 5)
-        coverImageView.setBorder(1, color: UIColor.lightGray)
+        coverImageView.setBorder(width: 1, color: UIColor.lightGray)
         
         addSubviews(views: coverImageView, titleLabel, authorLabel)
         coverImageView.horizontalSuperview()

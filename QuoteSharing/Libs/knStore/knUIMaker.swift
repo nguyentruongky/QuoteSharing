@@ -68,6 +68,22 @@ class UIMaker {
         tf.inputAccessoryView = makeKeyboardDoneView()
         return tf
     }
+    
+    static func makeTextView(text: String? = nil,
+                              placeholder: String = "",
+                              font: UIFont = UIFont.main(),
+                              color: UIColor = .black,
+                              alignment: NSTextAlignment = .left) -> KMPlaceholderTextView {
+        let tf = KMPlaceholderTextView()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.font = font
+        tf.textColor = color
+        tf.text = text
+        tf.placeholder = placeholder
+        tf.textAlignment = alignment
+        tf.inputAccessoryView = makeKeyboardDoneView()
+        return tf
+    }
 
     static func makeButton(title: String? = nil,
                            titleColor: UIColor = .black,
@@ -87,7 +103,7 @@ class UIMaker {
 
         button.titleLabel?.font = font
         button.setCorner(radius: cornerRadius)
-        button.setBorder(borderWidth, color: borderColor)
+        button.setBorder(width: borderWidth, color: borderColor)
         return button
     }
 

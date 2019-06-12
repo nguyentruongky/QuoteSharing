@@ -22,6 +22,7 @@ class BookDetailController: knListController<QuoteCell, Quote> {
         tableView.setHeader(headerView, height: 275)
         
         getData()
+        ui.addQuoteButton.addTarget(self, action: #selector(addQuote))
     }
     
     func getData() {
@@ -66,4 +67,11 @@ class BookDetailController: knListController<QuoteCell, Quote> {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat { return 60 }
     
+}
+
+private extension BookDetailController {
+    @objc func addQuote() {
+        ui.addQuoteView.show(in: view, verticalSpace: -space * 3)
+        ui.addQuoteView.textView.becomeFirstResponder()
+    }
 }

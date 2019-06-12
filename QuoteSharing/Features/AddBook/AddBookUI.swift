@@ -41,7 +41,7 @@ private extension AddBookController.UI {
     func makeTextCell(textField: UITextField) -> knTableCell {
         textField.setPlaceholderColor(.c_secondary)
         textField.setCorner(radius: 5)
-        textField.setBorder(0.5, color: .c_secondary)
+        textField.setBorder(width: 0.5, color: .c_secondary)
         textField.height(44)
         textField.setView(.left, space: 16)
         return knTableCell.wrap(view: textField, space: UIEdgeInsets(top: space, left: space, right: space))
