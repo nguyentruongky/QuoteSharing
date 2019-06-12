@@ -12,7 +12,6 @@ extension BookShelfController {
     class UI {
         let mostReadBooksView = BookShelfView(name: "Most read")
         let newBooksView = BookShelfView(name: "New")
-
     }
 }
 

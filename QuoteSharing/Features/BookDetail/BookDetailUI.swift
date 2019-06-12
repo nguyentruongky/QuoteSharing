@@ -11,7 +11,8 @@ import UIKit
 extension BookDetailController {
     class UI {
         let titleLabel = UIMaker.makeLabel(font: .main(.bold, size: 18),
-                                           color: .c_main)
+                                           color: .c_main,
+                                           numberOfLines: 3)
         let authorLabel = UIMaker.makeLabel(font: .main(size: 13),
                                             color: .c_secondary)
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
@@ -23,22 +24,21 @@ extension BookDetailController {
             coverImageView.setCorner(radius: 5)
             coverImageView.setBorder(width: 1, color: UIColor.lightGray)
             
+            let detailView = UIMaker.makeStackView(axis: .vertical, alignment: .leading, space: 4)
+            detailView.addViews(titleLabel, authorLabel)
+            
             let view = UIMaker.makeView(background: .white)
-            view.addSubviews(views: titleLabel, authorLabel, coverImageView)
+            view.addSubviews(views: detailView, coverImageView)
             
             coverImageView.leftSuperView(space: space)
             coverImageView.topSuperView(space: space)
             coverImageView.size(CGSize(width: 100, height: 150))
             
-            titleLabel.leftHorizontalSpacing(toView: coverImageView, space: -space)
-            let titleRight = titleLabel.rightSuperView(space: -space, isActive: false)
-            titleRight?.priority = .init(rawValue: 900)
-            titleRight?.isActive = true
-            
-            titleLabel.bottom(toAnchor: coverImageView.centerYAnchor)
-            
-            authorLabel.horizontal(toView: titleLabel)
-            authorLabel.verticalSpacing(toView: titleLabel, space: 4)
+            detailView.centerY(toView: coverImageView)
+            detailView.leftHorizontalSpacing(toView: coverImageView, space: -space)
+            let constraint = detailView.rightSuperView(space: -space, isActive: false)
+            constraint?.priority = .init(rawValue: 900)
+            constraint?.isActive = true
             
             view.addSubviews(views: addQuoteButton)
             addQuoteButton.horizontalSuperview(space: space)

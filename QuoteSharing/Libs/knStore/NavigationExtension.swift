@@ -36,9 +36,12 @@ extension UINavigationController {
             NSAttributedString.Key.font: font]
     }
     
-    func removeLine(color: UIColor = .white, titleColor: UIColor = .black) {
-        navigationBar.setBackgroundImage(UIImage.createImage(from: color), for: .default)
+    func removeLine() {
         navigationBar.shadowImage = UIImage()
+    }
+    
+    func fillNavigationBar(color: UIColor, titleColor: UIColor) {
+        navigationBar.setBackgroundImage(UIImage.createImage(from: color), for: .default)
         navigationBar.tintColor = titleColor
     }
     

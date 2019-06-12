@@ -99,10 +99,6 @@ extension UIViewController {
         navTitleLabel.centerY(toView: navigationItem.titleView!)
         navTitleLabel.centerX(toView: navigationItem.titleView!)
     }
-    
-    func setNavBarColor(_ color: UIColor) {
-        navigationController?.removeLine(color: color)
-    }
 }
 
 

@@ -10,7 +10,7 @@ import Foundation
 import FirebaseFirestore
 
 enum Node: String {
-    case books
+    case books, quotes
 }
 
 struct DB {

@@ -64,4 +64,11 @@ class BookShelfView: knGridView<BookCell, Book> {
         collectionView.verticalSpacing(toView: nameLabel, space: 16)
         collectionView.bottomSuperView()
     }
+    
+    override func didSelectItem(at indexPath: IndexPath) {
+        let data = datasource[indexPath.row]
+        let controller = BookDetailController()
+        controller.setupData(data)
+        UIApplication.push(controller)
+    }
 }
