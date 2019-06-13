@@ -22,7 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setupApp() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = wrap(LoginController())
+        let controller: UIViewController
+        if Auth.auth().currentUser == nil {
+            controller = wrap(LoginController())
+        } else {
+            controller = Boss()
+            GetMyDetailWorker().execute()
+        }
+        window!.rootViewController = controller
         window!.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
     }

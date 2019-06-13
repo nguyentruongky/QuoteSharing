@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
 struct Reader {
     var id: String = ""
@@ -24,6 +24,14 @@ struct Reader {
         if let avatar = user.photoURL?.absoluteString {
             self.avatar = avatar + "?type=large"
         }
+    }
+    
+    init(raw: AnyObject) {
+        id = raw["id"] as? String ?? UUID().uuidString
+        email = raw["email"] as? String
+        phone = raw["phone"] as? String
+        name = raw["name"] as? String
+        avatar = raw["avatar"] as? String
     }
     
     func toDict() -> [String: Any] {

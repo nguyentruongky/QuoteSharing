@@ -171,7 +171,7 @@ extension UITableView {
         tableHeaderView = UIView()
         tableHeaderView?.frame.size.height = height
         tableHeaderView?.addSubview(header)
-        tableHeaderView?.addConstraints(withFormat: "H:|[v0]|", views: header)
+        tableHeaderView?.addConstraints(withFormat: "H:|[v0]-0@750-|", views: header)
         tableHeaderView?.addConstraints(withFormat: "V:|[v0]", views: header)
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 var appSetting = AppSetting()
 struct AppSetting {
-    var userId: String? {
+    var myId: String? {
         get { return UserDefaults.get(key: "userId") as String? }
         set {
             UserDefaults.set(key: "userId", value: newValue)

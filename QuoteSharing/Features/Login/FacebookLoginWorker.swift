@@ -60,7 +60,7 @@ class FacebookLoginWorker {
         DB().getCollection(.users)
             .document(myself.id)
             .setData(myself.toDict())
-        appSetting.userId = myself.id
+        appSetting.myId = myself.id
         appSetting.myself = myself
         successAction?(myself)
         

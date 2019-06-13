@@ -16,19 +16,18 @@ extension AddBookController {
         let authorTextField = UIMaker.makeTextField(placeholder: "Author",
                                                     font: .main(),
                                                     color: .c_main)
-        let coverImageView = UIMaker.makeImageView()
+        let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
         let addButton = UIMaker.makeMainButton(title: "Add book")
         let selectPhotoButton = UIMaker.makeButton(image: UIImage(named: "camera"))
 
         func setupView() -> [knTableCell] {
             let coverCell = makeCoverImageCell()
             coverCell.height(400)
-            coverImageView.backgroundColor = .green
 
             return [
+                coverCell,
                 makeTextCell(textField: titleTextField),
                 makeTextCell(textField: authorTextField),
-                coverCell,
                 makeAddButtonCell()
             ]
         }
@@ -48,22 +47,28 @@ private extension AddBookController.UI {
     }
     
     func makeCoverImageCell() -> knTableCell {
+        coverImageView.setCorner(radius: 5)
+        coverImageView.setBorder(width: 1, color: .lightGray)
+        
         let label = UIMaker.makeLabel(text: "Book cover", color: .c_secondary)
 
         selectPhotoButton.imageEdgeInsets = UIEdgeInsets(space: 6)
         let cell = knTableCell()
         cell.addSubviews(views: label, selectPhotoButton, coverImageView)
-        label.leftSuperView(space: space)
-        label.topSuperView(space: space * 1.5)
         
-        selectPhotoButton.square(edge: 44)
-        selectPhotoButton.centerY(toView: label)
-        selectPhotoButton.leftHorizontalSpacing(toView: label, space: -space)
-        
-        coverImageView.horizontalSuperview()
-        coverImageView.verticalSpacing(toView: label, space: space)
+        coverImageView.width(200)
+        coverImageView.centerXSuperView()
+        coverImageView.topSuperView(space: space * 2)
         coverImageView.bottomSuperView(space: -space)
         
+        selectPhotoButton.fill(toView: coverImageView)
+        selectPhotoButton.imageView?.changeColor(to: .c_secondary)
+        
+        label.centerXSuperView()
+        label.centerYSuperView(space: space)
+        
+        
+        coverImageView.downloadImage(from: "https://images-na.ssl-images-amazon.com/images/I/41o0Fkf%2BvfL.jpg")
         return cell
     }
     

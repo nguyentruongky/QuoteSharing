@@ -42,37 +42,6 @@ class BookDetailController: knListController<QuoteCell, Quote> {
         GetQuotesWorker(bookId: bookId, successAction: { quotes in
             self.datasource = quotes
         }).execute()
-//
-//        datasource = [
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "So many books, so little time.",
-//                  timestamp: 1560248560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "A room without books is like a body without a soul.",
-//                  timestamp: 1560244560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.",
-//                  timestamp: 1560243560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "Good friends, good books, and a sleepy conscience: this is the ideal life.",
-//                  timestamp: 1560242560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
-//                  timestamp: 1510248560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.",
-//                  timestamp: 1563248560),
-//            Quote(avatar: "https://vignette.wikia.nocookie.net/hawaiifiveo/images/f/f8/Officer_Kono_Kalakaua.jpg/revision/latest?cb=20160204072320",
-//                  name: "Kono",
-//                  content: "I have always imagined that Paradise will be a kind of library.",
-//                  timestamp: 1360248560),
-//        ]
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -92,6 +61,7 @@ private extension BookDetailController {
     @objc func saveQuote(button: UIButton) {
         button.setProcess(visible: true)
         var quote = Quote()
+        quote.quoterId = appSetting.myId
         quote.bookId = data?.id
         quote.content = ui.addQuoteView.textView.text
         AddQuoteWorker(quote: quote, successAction: {

@@ -53,7 +53,7 @@ private extension LoginController {
     }
     
     func didLoginSuccess(user: Reader) {
-        let controller = BookShelfController()
+        let controller = ExploreController()
         present(wrap(controller))
     }
 }
