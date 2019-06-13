@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setupApp() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = wrap(BookShelfController())
+        window!.rootViewController = wrap(LoginController())
         window!.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
     }

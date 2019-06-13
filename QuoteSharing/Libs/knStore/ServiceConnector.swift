@@ -257,7 +257,7 @@ struct AlamofireConnector {
 
 }
 
-struct knError {
+class knError {
     var code: String = "unknown"
     var message: String?
     var data: AnyObject?
@@ -270,3 +270,10 @@ struct knError {
     }
 }
 
+class knAuthError: knError {
+    convenience init(message: String) {
+        self.init()
+        code = "auth_fail"
+        self.message = message
+    }
+}

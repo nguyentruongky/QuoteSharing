@@ -13,6 +13,7 @@
 		264997ED22B0BA6600C3BDF3 /* AddQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997EC22B0BA6600C3BDF3 /* AddQuoteView.swift */; };
 		264997F122B0E8E100C3BDF3 /* GetQuotesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997F022B0E8E100C3BDF3 /* GetQuotesWorker.swift */; };
 		264997F322B0ED7400C3BDF3 /* AddQuoteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997F222B0ED7400C3BDF3 /* AddQuoteWorker.swift */; };
+		264997F522B0F8BE00C3BDF3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997F422B0F8BE00C3BDF3 /* LoginController.swift */; };
 		266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5782253010300FCEE5A /* AppDelegate.swift */; };
 		266AC5802253010500FCEE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266AC57F2253010500FCEE5A /* Assets.xcassets */; };
 		266AC5832253010500FCEE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266AC5812253010500FCEE5A /* LaunchScreen.storyboard */; };
@@ -62,6 +63,9 @@
 		26D9898622AFA594007DA40D /* BookShelfUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9898522AFA594007DA40D /* BookShelfUI.swift */; };
 		26D9898A22AFA6F9007DA40D /* GetBooksWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9898922AFA6F9007DA40D /* GetBooksWorker.swift */; };
 		26D9899022AFB49A007DA40D /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9898F22AFB49A007DA40D /* BookDetailController.swift */; };
+		26EA57C822B2015500BD5006 /* MessageHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57C722B2015500BD5006 /* MessageHub.swift */; };
+		26EA57CA22B2057900BD5006 /* FacebookLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57C922B2057900BD5006 /* FacebookLoginWorker.swift */; };
+		26EA57CC22B208F800BD5006 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57CB22B208F800BD5006 /* Reader.swift */; };
 		44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,7 @@
 		264997EC22B0BA6600C3BDF3 /* AddQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteView.swift; sourceTree = "<group>"; };
 		264997F022B0E8E100C3BDF3 /* GetQuotesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuotesWorker.swift; sourceTree = "<group>"; };
 		264997F222B0ED7400C3BDF3 /* AddQuoteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteWorker.swift; sourceTree = "<group>"; };
+		264997F422B0F8BE00C3BDF3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		266AC5752253010300FCEE5A /* QuoteSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266AC5782253010300FCEE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266AC57F2253010500FCEE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +129,9 @@
 		26D9898522AFA594007DA40D /* BookShelfUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfUI.swift; sourceTree = "<group>"; };
 		26D9898922AFA6F9007DA40D /* GetBooksWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksWorker.swift; sourceTree = "<group>"; };
 		26D9898F22AFB49A007DA40D /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
+		26EA57C722B2015500BD5006 /* MessageHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHub.swift; sourceTree = "<group>"; };
+		26EA57C922B2057900BD5006 /* FacebookLoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginWorker.swift; sourceTree = "<group>"; };
+		26EA57CB22B208F800BD5006 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.release.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,19 +151,29 @@
 		264997EB22B0BA6000C3BDF3 /* Quote */ = {
 			isa = PBXGroup;
 			children = (
-				264997E522B0A6E800C3BDF3 /* Quote.swift */,
 				264997EC22B0BA6600C3BDF3 /* AddQuoteView.swift */,
+				264997E522B0A6E800C3BDF3 /* Quote.swift */,
 			);
 			path = Quote;
+			sourceTree = "<group>";
+		};
+		264997F622B0F8C200C3BDF3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				264997F422B0F8BE00C3BDF3 /* LoginController.swift */,
+				26EA57C922B2057900BD5006 /* FacebookLoginWorker.swift */,
+				26EA57CB22B208F800BD5006 /* Reader.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		266AC56C2253010300FCEE5A = {
 			isa = PBXGroup;
 			children = (
-				266AC5772253010300FCEE5A /* QuoteSharing */,
-				266AC5762253010300FCEE5A /* Products */,
-				8EEE5ADA11EFC1911A0AECED /* Pods */,
 				F7989F655C8D9032648A3D06 /* Frameworks */,
+				8EEE5ADA11EFC1911A0AECED /* Pods */,
+				266AC5762253010300FCEE5A /* Products */,
+				266AC5772253010300FCEE5A /* QuoteSharing */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,10 +188,11 @@
 		266AC5772253010300FCEE5A /* QuoteSharing */ = {
 			isa = PBXGroup;
 			children = (
+				26EA57C622B2014D00BD5006 /* Common */,
+				266AC5C22253015900FCEE5A /* Config */,
 				26D9897322AF73A9007DA40D /* Connector */,
 				26C2813122AF5A660058910B /* Features */,
 				266AC58C2253013800FCEE5A /* Libs */,
-				266AC5C22253015900FCEE5A /* Config */,
 				266AC5C32253016200FCEE5A /* Resources */,
 			);
 			path = QuoteSharing;
@@ -182,9 +201,9 @@
 		266AC58C2253013800FCEE5A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				266AC58D2253014200FCEE5A /* knStore */,
 				26D9897C22AF880D007DA40D /* knPhotoSelectWorker.swift */,
 				264997E922B0BA5500C3BDF3 /* knPopup.swift */,
-				266AC58D2253014200FCEE5A /* knStore */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -192,19 +211,13 @@
 		266AC58D2253014200FCEE5A /* knStore */ = {
 			isa = PBXGroup;
 			children = (
-				266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */,
 				266AC5902253014B00FCEE5A /* 1.StartPoint.swift */,
+				266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */,
 				266AC5942253014B00FCEE5A /* DateExtension.swift */,
 				266AC58F2253014B00FCEE5A /* DeviceType.swift */,
 				266AC59E2253014C00FCEE5A /* General.swift */,
 				266AC5912253014B00FCEE5A /* IntExtension.swift */,
 				266AC59D2253014C00FCEE5A /* KMPlaceholderTextView.swift */,
-				266AC5A72253014C00FCEE5A /* knConstraints.swift */,
-				266AC5962253014C00FCEE5A /* knController.swift */,
-				266AC5952253014B00FCEE5A /* knGridView.swift */,
-				266AC5972253014C00FCEE5A /* knListView.swift */,
-				266AC58E2253014B00FCEE5A /* knUIMaker.swift */,
-				266AC5A52253014C00FCEE5A /* knView.swift */,
 				266AC5A02253014C00FCEE5A /* NavigationExtension.swift */,
 				266AC59B2253014C00FCEE5A /* OtherExtensions.swift */,
 				266AC5A22253014C00FCEE5A /* ServiceConnector.swift */,
@@ -218,6 +231,12 @@
 				266AC59F2253014C00FCEE5A /* UITextFieldExtension.swift */,
 				266AC5922253014B00FCEE5A /* UIViewControllerExtension.swift */,
 				266AC5932253014B00FCEE5A /* UIViewExtension.swift */,
+				266AC5A72253014C00FCEE5A /* knConstraints.swift */,
+				266AC5962253014C00FCEE5A /* knController.swift */,
+				266AC5952253014B00FCEE5A /* knGridView.swift */,
+				266AC5972253014C00FCEE5A /* knListView.swift */,
+				266AC58E2253014B00FCEE5A /* knUIMaker.swift */,
+				266AC5A52253014C00FCEE5A /* knView.swift */,
 			);
 			path = knStore;
 			sourceTree = "<group>";
@@ -236,9 +255,9 @@
 		266AC5C32253016200FCEE5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				26C2813C22AF5BD90058910B /* Colors.swift */,
 				26C2814722AF5BDF0058910B /* Fonts */,
 				266AC57F2253010500FCEE5A /* Assets.xcassets */,
+				26C2813C22AF5BD90058910B /* Colors.swift */,
 				266AC5812253010500FCEE5A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -247,10 +266,11 @@
 		26C2813122AF5A660058910B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				264997EB22B0BA6000C3BDF3 /* Quote */,
+				26C2813422AF5ACF0058910B /* AddBook */,
 				26D9898E22AFB490007DA40D /* BookDetail */,
 				26D9897E22AF8EE4007DA40D /* BookShelf */,
-				26C2813422AF5ACF0058910B /* AddBook */,
+				264997EB22B0BA6000C3BDF3 /* Quote */,
+				264997F622B0F8C200C3BDF3 /* Login */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -259,8 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				26C2813222AF5A730058910B /* AddBookController.swift */,
-				26D9897622AF8158007DA40D /* AddBookWorker.swift */,
 				26C2813522AF5AE00058910B /* AddBookUI.swift */,
+				26D9897622AF8158007DA40D /* AddBookWorker.swift */,
 				26D9897822AF815C007DA40D /* Book.swift */,
 			);
 			path = AddBook;
@@ -309,12 +329,20 @@
 		26D9898E22AFB490007DA40D /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
+				264997F222B0ED7400C3BDF3 /* AddQuoteWorker.swift */,
 				26D9898F22AFB49A007DA40D /* BookDetailController.swift */,
 				264997E722B0A6F100C3BDF3 /* BookDetailUI.swift */,
-				264997F222B0ED7400C3BDF3 /* AddQuoteWorker.swift */,
 				264997F022B0E8E100C3BDF3 /* GetQuotesWorker.swift */,
 			);
 			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		26EA57C622B2014D00BD5006 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				26EA57C722B2015500BD5006 /* MessageHub.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8EEE5ADA11EFC1911A0AECED /* Pods */ = {
@@ -441,6 +469,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -456,6 +491,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -483,6 +525,7 @@
 				266AC5B62253014C00FCEE5A /* UIFontExtension.swift in Sources */,
 				266AC5B52253014C00FCEE5A /* OtherExtensions.swift in Sources */,
 				266AC5C02253014C00FCEE5A /* StringExtension.swift in Sources */,
+				26EA57CC22B208F800BD5006 /* Reader.swift in Sources */,
 				264997E822B0A6F100C3BDF3 /* BookDetailUI.swift in Sources */,
 				266AC5AF2253014C00FCEE5A /* knGridView.swift in Sources */,
 				266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */,
@@ -490,11 +533,13 @@
 				266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */,
 				26C2813322AF5A730058910B /* AddBookController.swift in Sources */,
 				266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */,
+				264997F522B0F8BE00C3BDF3 /* LoginController.swift in Sources */,
 				266AC5BF2253014C00FCEE5A /* knView.swift in Sources */,
 				266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */,
 				26D9898222AF9357007DA40D /* BookShelfController.swift in Sources */,
 				266AC5B02253014C00FCEE5A /* knController.swift in Sources */,
 				26D9897722AF8158007DA40D /* AddBookWorker.swift in Sources */,
+				26EA57CA22B2057900BD5006 /* FacebookLoginWorker.swift in Sources */,
 				264997EA22B0BA5500C3BDF3 /* knPopup.swift in Sources */,
 				264997ED22B0BA6600C3BDF3 /* AddQuoteView.swift in Sources */,
 				266AC5A92253014C00FCEE5A /* DeviceType.swift in Sources */,
@@ -518,6 +563,7 @@
 				26C2814322AF5BDA0058910B /* Colors.swift in Sources */,
 				266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */,
 				266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */,
+				26EA57C822B2015500BD5006 /* MessageHub.swift in Sources */,
 				266AC5B82253014C00FCEE5A /* General.swift in Sources */,
 				266AC5B12253014C00FCEE5A /* knListView.swift in Sources */,
 				26D9898622AFA594007DA40D /* BookShelfUI.swift in Sources */,
@@ -536,6 +582,7 @@
 				266AC5822253010500FCEE5A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,6 +643,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -650,6 +698,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

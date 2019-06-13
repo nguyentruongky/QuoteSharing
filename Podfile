@@ -11,6 +11,10 @@ target 'QuoteSharing' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'GSMessages'
   # Pods for QuoteSharing
 
 end
