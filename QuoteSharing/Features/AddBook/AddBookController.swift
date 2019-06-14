@@ -9,6 +9,8 @@
 import UIKit
 class AddBookController: knStaticListController {
     let ui = UI()
+    weak var delegate: AddBookDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
@@ -44,6 +46,8 @@ extension AddBookController {
         book.coverImage = ui.coverImageView.image
         AddBookWorker(book: book, success: { [weak self] in
             self?.ui.addButton.setProcess(visible: false)
+            self?.dismiss()
+            self?.delegate?.didAddBook(book)
         }, fail: { [weak self] error in
             self?.ui.addButton.setProcess(visible: false)
         }).execute()

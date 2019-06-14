@@ -63,7 +63,6 @@ extension knPhotoSelector: UINavigationControllerDelegate, UIImagePickerControll
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
-        imagePicker.allowsEditing = true
         delegate?.present(imagePicker)
     }
 }

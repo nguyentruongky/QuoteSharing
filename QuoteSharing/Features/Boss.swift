@@ -18,14 +18,15 @@ class Boss: UITabBarController {
         let exploreNav = wrapToNavigation(controller: exploreController, tabBarTitle: "Explore", iconName: "explore")
         
 
-        let searchController = UIViewController()
+        let searchController = SearchController()
         searchController.navigationItem.title = "Search"
         let searchNav = wrapToNavigation(controller: searchController, tabBarTitle: "Search", iconName: "search")
         
         
         viewControllers = [
-            exploreNav,
             searchNav,
+            exploreNav,
+            
         ]
     }
     
@@ -34,7 +35,6 @@ class Boss: UITabBarController {
         let nav = UINavigationController(rootViewController: controller)
         nav.tabBarItem.title = tabBarTitle
         nav.tabBarItem.image = UIImage(named: iconName)
-        nav.navigationBar.prefersLargeTitles = true
         return nav
     }
 }

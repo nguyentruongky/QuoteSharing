@@ -10,12 +10,14 @@ import UIKit
 
 
 class BookDetailController: knListController<QuoteCell, Quote> {
-    var data: Book?
+    private var data: Book?
     let ui = UI()
     override func setupView() {
         addBackButton(tintColor: .c_main)
+        navigationController?.hideBar(false)
         navigationController?.fillNavigationBar(color: .white, titleColor: .c_main)
         navigationController?.removeLine()
+        contentInset = UIEdgeInsets(bottom: space)
         super.setupView()
         rowHeight = 150
         view.addSubviews(views: tableView)
@@ -34,7 +36,11 @@ class BookDetailController: knListController<QuoteCell, Quote> {
         self.data = data
         ui.authorLabel.text = data.author
         ui.titleLabel.text = data.title
-        ui.coverImageView.downloadImage(from: data.cover)
+        if data.cover == nil {
+            ui.coverImageView.image = data.coverImage
+        } else {
+            ui.coverImageView.downloadImage(from: data.cover)
+        }
     }
     
     func getData() {
@@ -70,5 +76,8 @@ private extension BookDetailController {
             self.ui.addQuoteView.textView.text = ""
             button.setProcess(visible: false)
         }).execute()
+        
+        guard let bookId = data?.id else { return }
+        AddToMyReadingWorker(bookId: bookId).execute()
     }
 }

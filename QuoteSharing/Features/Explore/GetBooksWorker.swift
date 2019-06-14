@@ -15,7 +15,21 @@ class GetBooksWorker {
         self.successAction = successAction
     }
     
-    func execute() {}
+    func execute() {
+        DB().getCollection(.books)
+            .getDocuments {(snapshot, error) in
+                if let _ = error {
+                    self.successAction?([])
+                    return
+                }
+                
+                guard let queryDoc = snapshot?.documents
+                    .compactMap({ $0.data() as AnyObject }) else { return }
+                // filter logic here
+                let books = queryDoc.map({ Book(rawData: $0) })
+                self.successAction?(books)
+        }
+    }
 }
 
 class GetMostReadBooks: GetBooksWorker {

@@ -18,7 +18,6 @@ class ExploreController: knStaticListController {
         tableView.horizontalSuperview()
         tableView.bottomSuperView()
 
-        
         navigationController?.hideBar(true)
         let headerView = ui.makeReadingView()
         tableView.setHeader(headerView, height: hasNotch() ? 304 : 200)

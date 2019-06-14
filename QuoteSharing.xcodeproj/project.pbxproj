@@ -44,6 +44,10 @@
 		266AC5C02253014C00FCEE5A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A62253014C00FCEE5A /* StringExtension.swift */; };
 		266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5A72253014C00FCEE5A /* knConstraints.swift */; };
 		266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */; };
+		266D71F322B38A7600726EFA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F222B38A7600726EFA /* SearchController.swift */; };
+		266D71F522B3999D00726EFA /* knStateview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F422B3999D00726EFA /* knStateview.swift */; };
+		266D71F722B39B4C00726EFA /* SearchBooksWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */; };
+		266D71F922B39D8000726EFA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F822B39D8000726EFA /* UIImage+Gif.swift */; };
 		26C2813322AF5A730058910B /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813222AF5A730058910B /* AddBookController.swift */; };
 		26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813522AF5AE00058910B /* AddBookUI.swift */; };
 		26C2814322AF5BDA0058910B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813C22AF5BD90058910B /* Colors.swift */; };
@@ -57,6 +61,8 @@
 		26C8B54722B2275100D83413 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54622B2275100D83413 /* QuoteCell.swift */; };
 		26C8B54922B227AF00D83413 /* GetQuoterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54822B227AF00D83413 /* GetQuoterWorker.swift */; };
 		26C8B54E22B2465300D83413 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54D22B2465300D83413 /* Boss.swift */; };
+		26C8B55022B253D500D83413 /* AddReadingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54F22B253D500D83413 /* AddReadingWorker.swift */; };
+		26C8B55222B254A500D83413 /* GetMyReadingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B55122B254A500D83413 /* GetMyReadingWorker.swift */; };
 		26D9897522AF73A9007DA40D /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897422AF73A9007DA40D /* DB.swift */; };
 		26D9897722AF8158007DA40D /* AddBookWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897622AF8158007DA40D /* AddBookWorker.swift */; };
 		26D9897922AF815C007DA40D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9897822AF815C007DA40D /* Book.swift */; };
@@ -114,6 +120,10 @@
 		266AC5A62253014C00FCEE5A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		266AC5A72253014C00FCEE5A /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
 		266AC5C42253029C00FCEE5A /* Controller+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Controller+Keyboard.swift"; sourceTree = "<group>"; };
+		266D71F222B38A7600726EFA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		266D71F422B3999D00726EFA /* knStateview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knStateview.swift; sourceTree = "<group>"; };
+		266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksWorker.swift; sourceTree = "<group>"; };
+		266D71F822B39D8000726EFA /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		26C2813222AF5A730058910B /* AddBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
 		26C2813522AF5AE00058910B /* AddBookUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookUI.swift; sourceTree = "<group>"; };
 		26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -127,6 +137,8 @@
 		26C8B54622B2275100D83413 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		26C8B54822B227AF00D83413 /* GetQuoterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuoterWorker.swift; sourceTree = "<group>"; };
 		26C8B54D22B2465300D83413 /* Boss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		26C8B54F22B253D500D83413 /* AddReadingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReadingWorker.swift; sourceTree = "<group>"; };
+		26C8B55122B254A500D83413 /* GetMyReadingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMyReadingWorker.swift; sourceTree = "<group>"; };
 		26D9897422AF73A9007DA40D /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		26D9897622AF8158007DA40D /* AddBookWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookWorker.swift; sourceTree = "<group>"; };
 		26D9897822AF815C007DA40D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -212,6 +224,8 @@
 		266AC58C2253013800FCEE5A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				266D71F422B3999D00726EFA /* knStateview.swift */,
+				266D71F822B39D8000726EFA /* UIImage+Gif.swift */,
 				266AC58D2253014200FCEE5A /* knStore */,
 				26D9897C22AF880D007DA40D /* knPhotoSelectWorker.swift */,
 				264997E922B0BA5500C3BDF3 /* knPopup.swift */,
@@ -283,6 +297,7 @@
 				264997EB22B0BA6000C3BDF3 /* Quote */,
 				264997F622B0F8C200C3BDF3 /* Login */,
 				26C8B54D22B2465300D83413 /* Boss.swift */,
+				266D71F222B38A7600726EFA /* SearchController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -344,6 +359,7 @@
 				26D9898F22AFB49A007DA40D /* BookDetailController.swift */,
 				264997E722B0A6F100C3BDF3 /* BookDetailUI.swift */,
 				264997F022B0E8E100C3BDF3 /* GetQuotesWorker.swift */,
+				26C8B54F22B253D500D83413 /* AddReadingWorker.swift */,
 			);
 			path = BookDetail;
 			sourceTree = "<group>";
@@ -353,6 +369,8 @@
 			children = (
 				26EA57C722B2015500BD5006 /* MessageHub.swift */,
 				26C8B54422B2262700D83413 /* GetMyDetailWorker.swift */,
+				26C8B55122B254A500D83413 /* GetMyReadingWorker.swift */,
+				266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -540,7 +558,10 @@
 				26EA57CC22B208F800BD5006 /* Reader.swift in Sources */,
 				264997E822B0A6F100C3BDF3 /* BookDetailUI.swift in Sources */,
 				266AC5AF2253014C00FCEE5A /* knGridView.swift in Sources */,
+				26C8B55222B254A500D83413 /* GetMyReadingWorker.swift in Sources */,
 				266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */,
+				266D71F522B3999D00726EFA /* knStateview.swift in Sources */,
+				266D71F722B39B4C00726EFA /* SearchBooksWorker.swift in Sources */,
 				26C8B54722B2275100D83413 /* QuoteCell.swift in Sources */,
 				266AC5BE2253014C00FCEE5A /* 1.Setting.swift in Sources */,
 				266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */,
@@ -559,16 +580,19 @@
 				26D9897922AF815C007DA40D /* Book.swift in Sources */,
 				266AC5B72253014C00FCEE5A /* KMPlaceholderTextView.swift in Sources */,
 				266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */,
+				266D71F922B39D8000726EFA /* UIImage+Gif.swift in Sources */,
 				266AC5BB2253014C00FCEE5A /* UISearchBarExtension.swift in Sources */,
 				266AC5A82253014C00FCEE5A /* knUIMaker.swift in Sources */,
 				266AC5AE2253014C00FCEE5A /* DateExtension.swift in Sources */,
 				26D9898422AF9BA7007DA40D /* BookShelfView.swift in Sources */,
 				264997F122B0E8E100C3BDF3 /* GetQuotesWorker.swift in Sources */,
 				266AC5AA2253014C00FCEE5A /* 1.StartPoint.swift in Sources */,
+				266D71F322B38A7600726EFA /* SearchController.swift in Sources */,
 				26D9897522AF73A9007DA40D /* DB.swift in Sources */,
 				266AC5AC2253014C00FCEE5A /* UIViewControllerExtension.swift in Sources */,
 				266AC5B22253014C00FCEE5A /* UIImageExtension.swift in Sources */,
 				26D9897B22AF8362007DA40D /* FileStorage.swift in Sources */,
+				26C8B55022B253D500D83413 /* AddReadingWorker.swift in Sources */,
 				26C8B54E22B2465300D83413 /* Boss.swift in Sources */,
 				266AC5B42253014C00FCEE5A /* UIButtonExtension.swift in Sources */,
 				26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */,

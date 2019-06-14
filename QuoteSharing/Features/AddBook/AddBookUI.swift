@@ -38,6 +38,7 @@ extension AddBookController {
 
 private extension AddBookController.UI {
     func makeTextCell(textField: UITextField) -> knTableCell {
+        textField.autocorrectionType = .no
         textField.setPlaceholderColor(.c_secondary)
         textField.setCorner(radius: 5)
         textField.setBorder(width: 0.5, color: .c_secondary)
