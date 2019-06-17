@@ -11,7 +11,7 @@ class ExploreController: knStaticListController {
     let ui = UI()
     
     override func setupView() {
-        contentInset = UIEdgeInsets(top: hasNotch() ? -44 : 0)
+        contentInset = UIEdgeInsets(top: hasNotch() ? -44 : 0, bottom: space)
         super.setupView()
         view.addSubview(tableView)
         tableView.top(toView: view)
@@ -24,7 +24,14 @@ class ExploreController: knStaticListController {
         ui.coverImageView.downloadImage(from: "https://images-na.ssl-images-amazon.com/images/I/41o0Fkf%2BvfL.jpg")
         
         getData()
-        tableView.backgroundColor = UIColor(r: 241, g: 243, b: 245)
+        tableView.backgroundColor = .clear
+        view.backgroundColor = UIColor.white
+        
+        let stickView = UIMaker.makeView(background: UIColor.secondaryLight)
+        view.insertSubview(stickView, at: 0)
+        stickView.height(400)
+        stickView.topSuperView()
+        stickView.horizontalSuperview()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .default }

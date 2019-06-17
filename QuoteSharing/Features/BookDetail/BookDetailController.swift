@@ -11,18 +11,18 @@ import UIKit
 
 class BookDetailController: knListController<QuoteCell, Quote> {
     private var data: Book?
-    let ui = UI()
+    fileprivate let ui = UI()
+    
     override func setupView() {
-        addBackButton(tintColor: .c_main)
+        addBackButton(tintColor: .main)
         navigationController?.hideBar(false)
-        navigationController?.fillNavigationBar(color: .white, titleColor: .c_main)
+        navigationController?.fillNavigationBar(color: .white, titleColor: .main)
         navigationController?.removeLine()
         contentInset = UIEdgeInsets(bottom: space)
         super.setupView()
         rowHeight = 150
         view.addSubviews(views: tableView)
         tableView.fillSuperView()
-        tableView.backgroundColor = UIColor.c_secondary
         
         let headerView = ui.makeHeaderView()
         tableView.setHeader(headerView, height: 275)
@@ -30,6 +30,15 @@ class BookDetailController: knListController<QuoteCell, Quote> {
         getData()
         ui.addQuoteButton.addTarget(self, action: #selector(addQuote))
         ui.addQuoteView.addButton.addTarget(self, action: #selector(saveQuote))
+
+        tableView.backgroundColor = .clear
+        view.backgroundColor = .secondaryLight
+        
+        let stickView = UIMaker.makeView(background: .white)
+        view.insertSubview(stickView, at: 0)
+        stickView.height(400)
+        stickView.topSuperView()
+        stickView.horizontalSuperview()
     }
     
     func setupData(_ data: Book) {

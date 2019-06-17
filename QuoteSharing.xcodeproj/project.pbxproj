@@ -48,6 +48,8 @@
 		266D71F522B3999D00726EFA /* knStateview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F422B3999D00726EFA /* knStateview.swift */; };
 		266D71F722B39B4C00726EFA /* SearchBooksWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */; };
 		266D71F922B39D8000726EFA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F822B39D8000726EFA /* UIImage+Gif.swift */; };
+		266D721B22B7736F00726EFA /* ReadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D721A22B7736F00726EFA /* ReadingController.swift */; };
+		266D721D22B778C600726EFA /* ReadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D721C22B778C600726EFA /* ReadingUI.swift */; };
 		26C2813322AF5A730058910B /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813222AF5A730058910B /* AddBookController.swift */; };
 		26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813522AF5AE00058910B /* AddBookUI.swift */; };
 		26C2814322AF5BDA0058910B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813C22AF5BD90058910B /* Colors.swift */; };
@@ -124,6 +126,8 @@
 		266D71F422B3999D00726EFA /* knStateview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knStateview.swift; sourceTree = "<group>"; };
 		266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksWorker.swift; sourceTree = "<group>"; };
 		266D71F822B39D8000726EFA /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		266D721A22B7736F00726EFA /* ReadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingController.swift; sourceTree = "<group>"; };
+		266D721C22B778C600726EFA /* ReadingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingUI.swift; sourceTree = "<group>"; };
 		26C2813222AF5A730058910B /* AddBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
 		26C2813522AF5AE00058910B /* AddBookUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookUI.swift; sourceTree = "<group>"; };
 		26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -288,16 +292,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		266D721822B770B100726EFA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */,
+				266D71F222B38A7600726EFA /* SearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		266D721922B7736600726EFA /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				266D721A22B7736F00726EFA /* ReadingController.swift */,
+				266D721C22B778C600726EFA /* ReadingUI.swift */,
+			);
+			path = Reading;
+			sourceTree = "<group>";
+		};
 		26C2813122AF5A660058910B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				266D721922B7736600726EFA /* Reading */,
 				26C2813422AF5ACF0058910B /* AddBook */,
 				26D9898E22AFB490007DA40D /* BookDetail */,
 				26D9897E22AF8EE4007DA40D /* Explore */,
 				264997EB22B0BA6000C3BDF3 /* Quote */,
 				264997F622B0F8C200C3BDF3 /* Login */,
 				26C8B54D22B2465300D83413 /* Boss.swift */,
-				266D71F222B38A7600726EFA /* SearchController.swift */,
+				266D721822B770B100726EFA /* Search */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -370,7 +393,6 @@
 				26EA57C722B2015500BD5006 /* MessageHub.swift */,
 				26C8B54422B2262700D83413 /* GetMyDetailWorker.swift */,
 				26C8B55122B254A500D83413 /* GetMyReadingWorker.swift */,
-				266D71F622B39B4C00726EFA /* SearchBooksWorker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -565,6 +587,7 @@
 				26C8B54722B2275100D83413 /* QuoteCell.swift in Sources */,
 				266AC5BE2253014C00FCEE5A /* 1.Setting.swift in Sources */,
 				266AC5C52253029C00FCEE5A /* Controller+Keyboard.swift in Sources */,
+				266D721B22B7736F00726EFA /* ReadingController.swift in Sources */,
 				26C2813322AF5A730058910B /* AddBookController.swift in Sources */,
 				266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */,
 				264997F522B0F8BE00C3BDF3 /* LoginController.swift in Sources */,
@@ -581,6 +604,7 @@
 				266AC5B72253014C00FCEE5A /* KMPlaceholderTextView.swift in Sources */,
 				266AC5792253010300FCEE5A /* AppDelegate.swift in Sources */,
 				266D71F922B39D8000726EFA /* UIImage+Gif.swift in Sources */,
+				266D721D22B778C600726EFA /* ReadingUI.swift in Sources */,
 				266AC5BB2253014C00FCEE5A /* UISearchBarExtension.swift in Sources */,
 				266AC5A82253014C00FCEE5A /* knUIMaker.swift in Sources */,
 				266AC5AE2253014C00FCEE5A /* DateExtension.swift in Sources */,

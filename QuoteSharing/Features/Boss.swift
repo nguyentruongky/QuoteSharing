@@ -24,9 +24,8 @@ class Boss: UITabBarController {
         
         
         viewControllers = [
-            searchNav,
             exploreNav,
-            
+            searchNav,
         ]
     }
     

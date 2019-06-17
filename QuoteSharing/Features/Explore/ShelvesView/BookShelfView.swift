@@ -15,9 +15,9 @@ class BookCell: knGridCell<Book> {
         coverImageView.downloadImage(from: data?.cover)
         }}
     let titleLabel = UIMaker.makeLabel(font: .main(.bold, size: 18),
-                                       color: .c_main)
+                                       color: .main)
     let authorLabel = UIMaker.makeLabel(font: .main(size: 13),
-                                        color: .c_secondary)
+                                        color: .secondary)
     let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
     
     
@@ -43,7 +43,7 @@ class BookCell: knGridCell<Book> {
 
 class BookShelfView: knGridView<BookCell, Book> {
     let nameLabel = UIMaker.makeLabel(font: .main(.bold, size: 25),
-                                       color: .c_main)
+                                       color: .main)
     convenience init(name: String) {
         self.init(frame: .zero)
         nameLabel.text = name
@@ -68,6 +68,7 @@ class BookShelfView: knGridView<BookCell, Book> {
     override func didSelectItem(at indexPath: IndexPath) {
         let data = datasource[indexPath.row]
         let controller = BookDetailController()
+        controller.hidesBottomBarWhenPushed = true
         controller.setupData(data)
         UIApplication.push(controller)
     }

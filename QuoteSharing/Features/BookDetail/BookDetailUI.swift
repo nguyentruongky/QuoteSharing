@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension BookDetailController {
+internal extension BookDetailController {
     class UI {
         let titleLabel = UIMaker.makeLabel(font: .main(.bold, size: 18),
-                                           color: .c_main,
+                                           color: .main,
                                            numberOfLines: 3)
         let authorLabel = UIMaker.makeLabel(font: .main(size: 13),
-                                            color: .c_secondary)
+                                            color: .secondary)
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
         let addQuoteButton = UIMaker.makeMainButton(title: "Add Quote")
         let addQuoteView = AddQuoteView()
@@ -51,12 +51,12 @@ extension BookDetailController {
             let view = UIView()
             view.backgroundColor = .white
             let titleLabel = UIMaker.makeLabel(text: "Quotes", font: .main(.bold, size: 25),
-                                               color: .c_main)
+                                               color: .main)
             view.addSubviews(views: titleLabel)
             titleLabel.leftSuperView(space: space)
             titleLabel.centerYSuperView()
             
-            let line = UIMaker.makeHorizontalLine(color: .c_secondary, height: 1)
+            let line = UIMaker.makeHorizontalLine(color: .secondary, height: 1)
             view.addSubviews(views: line)
             line.horizontalSuperview()
             line.bottomSuperView()

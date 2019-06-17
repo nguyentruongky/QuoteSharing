@@ -12,10 +12,10 @@ extension AddBookController {
     class UI {
         let titleTextField = UIMaker.makeTextField(placeholder: "Book Title",
                                                    font: .main(),
-                                                   color: .c_main)
+                                                   color: .main)
         let authorTextField = UIMaker.makeTextField(placeholder: "Author",
                                                     font: .main(),
-                                                    color: .c_main)
+                                                    color: .main)
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
         let addButton = UIMaker.makeMainButton(title: "Add book")
         let selectPhotoButton = UIMaker.makeButton(image: UIImage(named: "camera"))
@@ -39,9 +39,9 @@ extension AddBookController {
 private extension AddBookController.UI {
     func makeTextCell(textField: UITextField) -> knTableCell {
         textField.autocorrectionType = .no
-        textField.setPlaceholderColor(.c_secondary)
+        textField.setPlaceholderColor(.secondary)
         textField.setCorner(radius: 5)
-        textField.setBorder(width: 0.5, color: .c_secondary)
+        textField.setBorder(width: 0.5, color: .secondary)
         textField.height(44)
         textField.setView(.left, space: 16)
         return knTableCell.wrap(view: textField, space: UIEdgeInsets(top: space, left: space, right: space))
@@ -51,7 +51,7 @@ private extension AddBookController.UI {
         coverImageView.setCorner(radius: 5)
         coverImageView.setBorder(width: 1, color: .lightGray)
         
-        let label = UIMaker.makeLabel(text: "Book cover", color: .c_secondary)
+        let label = UIMaker.makeLabel(text: "Book cover", color: .secondary)
 
         selectPhotoButton.imageEdgeInsets = UIEdgeInsets(space: 6)
         let cell = knTableCell()
@@ -63,7 +63,7 @@ private extension AddBookController.UI {
         coverImageView.bottomSuperView(space: -space)
         
         selectPhotoButton.fill(toView: coverImageView)
-        selectPhotoButton.imageView?.changeColor(to: .c_secondary)
+        selectPhotoButton.imageView?.changeColor(to: .secondary)
         
         label.centerXSuperView()
         label.centerYSuperView(space: space)

@@ -104,9 +104,9 @@ class knListController<C: knListCell<U>, U>: knController, UITableViewDataSource
         tableView.register(C.self, forCellReuseIdentifier: cellId)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        view.backgroundColor = .white
 
         setupView()
-        view.backgroundColor = .white
         setupKeyboardNotifcationListenerForScrollView(scrollView: tableView)
     }
     

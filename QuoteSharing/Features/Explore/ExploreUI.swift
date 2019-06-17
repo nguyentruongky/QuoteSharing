@@ -26,7 +26,7 @@ extension ExploreController.UI {
     }
     
     func makeReadingView() -> UIView {
-        let label = UIMaker.makeLabel(text: "Current reading", color: .c_main)
+        let label = UIMaker.makeLabel(text: "Current reading", color: .main)
         let continueButton = UIMaker.makeMainButton(title: "Continue")
         let view = UIMaker.makeView(background: UIColor(r: 241, g: 243, b: 245))
         view.addSubviews(views: label, continueButton, coverImageView)

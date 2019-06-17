@@ -9,7 +9,7 @@
 import UIKit
 class AddQuoteView: knPopup {
     let textView = UIMaker.makeTextView(placeholder: "Quote goes here",
-                                        color: .c_main)
+                                        color: .main)
     let addButton = UIMaker.makeMainButton(title: "Save")
     override func setupView() {
         super.setupView()

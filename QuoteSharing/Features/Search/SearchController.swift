@@ -51,6 +51,7 @@ class SearchController: GridController<BookCell, Book> {
     }
     
     @objc func showAddBook() {
+        hideKeyboard()
         let controller = AddBookController()
         controller.delegate = self
         present(controller)
@@ -73,6 +74,7 @@ class SearchController: GridController<BookCell, Book> {
     }
     
     override func didSelectItem(at indexPath: IndexPath) {
+        hideKeyboard()
         let controller = BookDetailController()
         controller.setupData(datasource[indexPath.row])
         push(controller)

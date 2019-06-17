@@ -18,9 +18,9 @@ class QuoteCell: knListCell<Quote> {
         }}
     
     let avatarImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
-    let quoterNameLabel = UIMaker.makeLabel(font: .main(.semibold), color: .c_secondary)
-    let contentLabel = UIMaker.makeLabel(font: .main(), color: .c_main, numberOfLines: 2)
-    let timestampLabel = UIMaker.makeLabel(font: .main(size: 12), color: .c_secondary)
+    let quoterNameLabel = UIMaker.makeLabel(font: .main(.semibold), color: .secondary)
+    let contentLabel = UIMaker.makeLabel(font: .main(), color: .main, numberOfLines: 2)
+    let timestampLabel = UIMaker.makeLabel(font: .main(size: 12), color: .secondary)
     
     override func setupView() {
         backgroundColor = UIColor.clear
