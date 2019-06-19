@@ -25,7 +25,7 @@ class QuoteCell: knListCell<Quote> {
     override func setupView() {
         backgroundColor = UIColor.clear
         let view = UIMaker.makeView(background: UIColor.white)
-        view.setCorner(radius: 5)
+        view.setCorner(radius: 7)
         view.addSubviews(views: avatarImageView, quoterNameLabel, contentLabel, timestampLabel)
         avatarImageView.leftSuperView(space: 12)
         avatarImageView.topSuperView(space: 12)

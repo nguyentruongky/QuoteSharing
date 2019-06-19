@@ -19,7 +19,7 @@ class AddQuoteView: knPopup {
     let placeholderView = UIMaker.makeStackView(axis: .horizontal, space: 4)
     
     override func setupView() {
-        let label = UIMaker.makeLabel(text: "Quote goes here or ", color: .secondary)
+        let label = UIMaker.makeLabel(text: "Type the quote or ", color: .secondary)
         let button = UIMaker.makeButton(imageName: "camera")
         button.imageView?.changeColor(to: .secondary)
         button.tintColor = .secondary

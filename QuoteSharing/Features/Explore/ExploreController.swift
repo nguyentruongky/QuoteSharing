@@ -47,6 +47,10 @@ class ExploreController: knStaticListController {
         GetNewBooks { [unowned self] (datasource) in
             self.didGetDataSuccess(books: datasource, shelf: self.ui.newBooksView)
         }.execute()
+        
+        GetStoriesWorker { [unowned self] (datasource) in
+            self.didGetStories(datasource)
+        }.execute()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -60,6 +64,13 @@ private extension ExploreController {
         if !books.isEmpty {
             shelf.datasource = books
             datasource.append(ui.addShelf(shelf, shelfHeight: 400))
+        }
+    }
+    
+    func didGetStories(_ stories: [Story]) {
+        if !stories.isEmpty {
+            ui.storiesView.datasource = stories
+            datasource.append(ui.addShelf(ui.storiesView, shelfHeight: 400))
         }
     }
 }

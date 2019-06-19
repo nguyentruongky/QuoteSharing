@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2626EE4722BA392100E95397 /* GetStoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626EE4622BA392100E95397 /* GetStoriesWorker.swift */; };
+		2626EE4922BA3DA200E95397 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626EE4822BA3DA200E95397 /* StoryView.swift */; };
 		264997E622B0A6E800C3BDF3 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997E522B0A6E800C3BDF3 /* Quote.swift */; };
 		264997E822B0A6F100C3BDF3 /* BookDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997E722B0A6F100C3BDF3 /* BookDetailUI.swift */; };
 		264997EA22B0BA5500C3BDF3 /* knPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264997E922B0BA5500C3BDF3 /* knPopup.swift */; };
@@ -91,6 +93,8 @@
 
 /* Begin PBXFileReference section */
 		1A980369AC42516C1E257CE9 /* Pods-QuoteSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.debug.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		2626EE4622BA392100E95397 /* GetStoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStoriesWorker.swift; sourceTree = "<group>"; };
+		2626EE4822BA3DA200E95397 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		264997E522B0A6E800C3BDF3 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		264997E722B0A6F100C3BDF3 /* BookDetailUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailUI.swift; sourceTree = "<group>"; };
 		264997E922B0BA5500C3BDF3 /* knPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knPopup.swift; sourceTree = "<group>"; };
@@ -188,6 +192,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2626EE4522BA391800E95397 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				2626EE4622BA392100E95397 /* GetStoriesWorker.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
 		264997EB22B0BA6000C3BDF3 /* Quote */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +372,7 @@
 		26C2813122AF5A660058910B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2626EE4522BA391800E95397 /* Story */,
 				266D722022B792EE00726EFA /* Menu */,
 				26C2813422AF5ACF0058910B /* AddBook */,
 				266D721F22B792E500726EFA /* Boss */,
@@ -420,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				26D9898322AF9BA7007DA40D /* BookShelfView.swift */,
+				2626EE4822BA3DA200E95397 /* StoryView.swift */,
 			);
 			path = ShelvesView;
 			sourceTree = "<group>";
@@ -680,6 +694,8 @@
 				26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */,
 				26D9898A22AFA6F9007DA40D /* GetBooksWorker.swift in Sources */,
 				26D9897D22AF880D007DA40D /* knPhotoSelectWorker.swift in Sources */,
+				2626EE4922BA3DA200E95397 /* StoryView.swift in Sources */,
+				2626EE4722BA392100E95397 /* GetStoriesWorker.swift in Sources */,
 				26C2814322AF5BDA0058910B /* Colors.swift in Sources */,
 				266AC5AD2253014C00FCEE5A /* UIViewExtension.swift in Sources */,
 				266AC5AB2253014C00FCEE5A /* IntExtension.swift in Sources */,

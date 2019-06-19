@@ -21,7 +21,7 @@ internal extension BookDetailController {
         
         lazy var sectionHeaderView = makeSectionHeaderView()
         func makeHeaderView() -> UIView {
-            coverImageView.setCorner(radius: 5)
+            coverImageView.setCorner(radius: 7)
             coverImageView.setBorder(width: 1, color: UIColor.lightGray)
             
             let detailView = UIMaker.makeStackView(axis: .vertical, alignment: .leading, space: 4)

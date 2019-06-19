@@ -11,6 +11,7 @@ import UIKit
 extension ExploreController {
     class UI {
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
+        let storiesView = StoryView()
         let mostReadBooksView = BookShelfView(name: "Most read")
         let newBooksView = BookShelfView(name: "New")
     }

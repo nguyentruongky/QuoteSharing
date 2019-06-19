@@ -40,7 +40,7 @@ private extension AddBookController.UI {
     func makeTextCell(textField: UITextField) -> knTableCell {
         textField.autocorrectionType = .no
         textField.setPlaceholderColor(.secondary)
-        textField.setCorner(radius: 5)
+        textField.setCorner(radius: 7)
         textField.setBorder(width: 0.5, color: .secondary)
         textField.height(44)
         textField.setView(.left, space: 16)
@@ -48,7 +48,7 @@ private extension AddBookController.UI {
     }
     
     func makeCoverImageCell() -> knTableCell {
-        coverImageView.setCorner(radius: 5)
+        coverImageView.setCorner(radius: 7)
         coverImageView.setBorder(width: 1, color: .lightGray)
         
         let label = UIMaker.makeLabel(text: "Book cover", color: .secondary)

@@ -30,7 +30,7 @@ extension ProfileController {
         private func makeCell(tf: UITextField) -> knTableCell {
             let cell = knTableCell()
             cell.addSubviews(views: tf)
-            tf.setCorner(radius: 5)
+            tf.setCorner(radius: 7)
             tf.setBorder(width: 1, color: .lightGray)
             tf.setView(.left, space: 16)
             tf.fill(toView: cell, space: UIEdgeInsets(left: space, bottom: space, right: space))
