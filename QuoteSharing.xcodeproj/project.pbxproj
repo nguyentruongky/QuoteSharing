@@ -50,8 +50,13 @@
 		266D71F922B39D8000726EFA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D71F822B39D8000726EFA /* UIImage+Gif.swift */; };
 		266D721B22B7736F00726EFA /* ReadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D721A22B7736F00726EFA /* ReadingController.swift */; };
 		266D721D22B778C600726EFA /* ReadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D721C22B778C600726EFA /* ReadingUI.swift */; };
-		266D722222B792F300726EFA /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722122B792F300726EFA /* Setting.swift */; };
-		266D722422B7933C00726EFA /* SettingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722322B7933C00726EFA /* SettingUI.swift */; };
+		266D722222B792F300726EFA /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722122B792F300726EFA /* MenuController.swift */; };
+		266D722422B7933C00726EFA /* MenuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722322B7933C00726EFA /* MenuUI.swift */; };
+		266D722D22B7A39400726EFA /* ProfileUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722822B7A36D00726EFA /* ProfileUI.swift */; };
+		266D722E22B7A39400726EFA /* GetProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722922B7A36D00726EFA /* GetProfileWorker.swift */; };
+		266D722F22B7A39400726EFA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722A22B7A36D00726EFA /* ProfileController.swift */; };
+		266D723022B7A39400726EFA /* UpdateProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722B22B7A36D00726EFA /* UpdateProfileWorker.swift */; };
+		266D723122B7A39400726EFA /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D722C22B7A36D00726EFA /* ProfileInteractor.swift */; };
 		26C2813322AF5A730058910B /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813222AF5A730058910B /* AddBookController.swift */; };
 		26C2813622AF5AE00058910B /* AddBookUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813522AF5AE00058910B /* AddBookUI.swift */; };
 		26C2814322AF5BDA0058910B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2813C22AF5BD90058910B /* Colors.swift */; };
@@ -61,6 +66,7 @@
 		26C2814D22AF631A0058910B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */; };
 		26C2814E22AF631A0058910B /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */; };
 		26C2815022AF67E40058910B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26C2814F22AF67E40058910B /* GoogleService-Info.plist */; };
+		26C7711E22B8DA5400214B62 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 26C7711D22B8DA5400214B62 /* tessdata */; };
 		26C8B54522B2262700D83413 /* GetMyDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54422B2262700D83413 /* GetMyDetailWorker.swift */; };
 		26C8B54722B2275100D83413 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54622B2275100D83413 /* QuoteCell.swift */; };
 		26C8B54922B227AF00D83413 /* GetQuoterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C8B54822B227AF00D83413 /* GetQuoterWorker.swift */; };
@@ -80,7 +86,7 @@
 		26EA57C822B2015500BD5006 /* MessageHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57C722B2015500BD5006 /* MessageHub.swift */; };
 		26EA57CA22B2057900BD5006 /* FacebookLoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57C922B2057900BD5006 /* FacebookLoginWorker.swift */; };
 		26EA57CC22B208F800BD5006 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA57CB22B208F800BD5006 /* Reader.swift */; };
-		44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */; };
+		E82E040880F9E18B658FA7B4 /* Pods_QuoteSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B682153646DC81627B055AA3 /* Pods_QuoteSharing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,8 +136,13 @@
 		266D71F822B39D8000726EFA /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		266D721A22B7736F00726EFA /* ReadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingController.swift; sourceTree = "<group>"; };
 		266D721C22B778C600726EFA /* ReadingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingUI.swift; sourceTree = "<group>"; };
-		266D722122B792F300726EFA /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		266D722322B7933C00726EFA /* SettingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUI.swift; sourceTree = "<group>"; };
+		266D722122B792F300726EFA /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		266D722322B7933C00726EFA /* MenuUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuUI.swift; sourceTree = "<group>"; };
+		266D722822B7A36D00726EFA /* ProfileUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUI.swift; sourceTree = "<group>"; };
+		266D722922B7A36D00726EFA /* GetProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileWorker.swift; sourceTree = "<group>"; };
+		266D722A22B7A36D00726EFA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		266D722B22B7A36D00726EFA /* UpdateProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileWorker.swift; sourceTree = "<group>"; };
+		266D722C22B7A36D00726EFA /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		26C2813222AF5A730058910B /* AddBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
 		26C2813522AF5AE00058910B /* AddBookUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookUI.swift; sourceTree = "<group>"; };
 		26C2813922AF5BD90058910B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -141,6 +152,7 @@
 		26C2813E22AF5BD90058910B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		26C2813F22AF5BDA0058910B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		26C2814F22AF67E40058910B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26C7711D22B8DA5400214B62 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		26C8B54422B2262700D83413 /* GetMyDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMyDetailWorker.swift; sourceTree = "<group>"; };
 		26C8B54622B2275100D83413 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		26C8B54822B227AF00D83413 /* GetQuoterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQuoterWorker.swift; sourceTree = "<group>"; };
@@ -160,7 +172,7 @@
 		26EA57C722B2015500BD5006 /* MessageHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHub.swift; sourceTree = "<group>"; };
 		26EA57C922B2057900BD5006 /* FacebookLoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginWorker.swift; sourceTree = "<group>"; };
 		26EA57CB22B208F800BD5006 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
-		73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B682153646DC81627B055AA3 /* Pods_QuoteSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuoteSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBA81579447E8B563457896 /* Pods-QuoteSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuoteSharing.release.xcconfig"; path = "Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BBE561C21CE23E0831F8A1 /* Pods_QuoteSharing.framework in Frameworks */,
+				E82E040880F9E18B658FA7B4 /* Pods_QuoteSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +216,7 @@
 				F7989F655C8D9032648A3D06 /* Frameworks */,
 				8EEE5ADA11EFC1911A0AECED /* Pods */,
 				266AC5762253010300FCEE5A /* Products */,
+				26C7711D22B8DA5400214B62 /* tessdata */,
 				266AC5772253010300FCEE5A /* QuoteSharing */,
 			);
 			sourceTree = "<group>";
@@ -322,19 +335,32 @@
 			path = Boss;
 			sourceTree = "<group>";
 		};
-		266D722022B792EE00726EFA /* Setting */ = {
+		266D722022B792EE00726EFA /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				266D722122B792F300726EFA /* Setting.swift */,
-				266D722322B7933C00726EFA /* SettingUI.swift */,
+				266D722722B7A36D00726EFA /* Profile */,
+				266D722122B792F300726EFA /* MenuController.swift */,
+				266D722322B7933C00726EFA /* MenuUI.swift */,
 			);
-			path = Setting;
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		266D722722B7A36D00726EFA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				266D722822B7A36D00726EFA /* ProfileUI.swift */,
+				266D722922B7A36D00726EFA /* GetProfileWorker.swift */,
+				266D722A22B7A36D00726EFA /* ProfileController.swift */,
+				266D722B22B7A36D00726EFA /* UpdateProfileWorker.swift */,
+				266D722C22B7A36D00726EFA /* ProfileInteractor.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		26C2813122AF5A660058910B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				266D722022B792EE00726EFA /* Setting */,
+				266D722022B792EE00726EFA /* Menu */,
 				26C2813422AF5ACF0058910B /* AddBook */,
 				266D721F22B792E500726EFA /* Boss */,
 				26D9898E22AFB490007DA40D /* BookDetail */,
@@ -431,7 +457,7 @@
 		F7989F655C8D9032648A3D06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73082604FD360A5F3378C76E /* Pods_QuoteSharing.framework */,
+				B682153646DC81627B055AA3 /* Pods_QuoteSharing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -498,6 +524,7 @@
 			files = (
 				26C2814D22AF631A0058910B /* Montserrat-Regular.ttf in Resources */,
 				26C2815022AF67E40058910B /* GoogleService-Info.plist in Resources */,
+				26C7711E22B8DA5400214B62 /* tessdata in Resources */,
 				26C2814B22AF631A0058910B /* Montserrat-Light.ttf in Resources */,
 				26C2814C22AF631A0058910B /* Montserrat-Medium.ttf in Resources */,
 				26C2814E22AF631A0058910B /* Montserrat-SemiBold.ttf in Resources */,
@@ -541,6 +568,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QuoteSharing/Pods-QuoteSharing-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -549,11 +577,13 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -563,6 +593,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -571,11 +602,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -604,6 +637,7 @@
 				266AC5AF2253014C00FCEE5A /* knGridView.swift in Sources */,
 				26C8B55222B254A500D83413 /* GetMyReadingWorker.swift in Sources */,
 				266AC5BD2253014C00FCEE5A /* UIApplicationExtension.swift in Sources */,
+				266D722E22B7A39400726EFA /* GetProfileWorker.swift in Sources */,
 				266D71F522B3999D00726EFA /* knStateview.swift in Sources */,
 				266D71F722B39B4C00726EFA /* SearchBooksWorker.swift in Sources */,
 				26C8B54722B2275100D83413 /* QuoteCell.swift in Sources */,
@@ -614,8 +648,9 @@
 				266AC5B92253014C00FCEE5A /* UITextFieldExtension.swift in Sources */,
 				264997F522B0F8BE00C3BDF3 /* LoginController.swift in Sources */,
 				266AC5BF2253014C00FCEE5A /* knView.swift in Sources */,
+				266D723022B7A39400726EFA /* UpdateProfileWorker.swift in Sources */,
 				266AC5C12253014C00FCEE5A /* knConstraints.swift in Sources */,
-				266D722422B7933C00726EFA /* SettingUI.swift in Sources */,
+				266D722422B7933C00726EFA /* MenuUI.swift in Sources */,
 				26D9898222AF9357007DA40D /* ExploreController.swift in Sources */,
 				266AC5B02253014C00FCEE5A /* knController.swift in Sources */,
 				26D9897722AF8158007DA40D /* AddBookWorker.swift in Sources */,
@@ -651,13 +686,16 @@
 				26EA57C822B2015500BD5006 /* MessageHub.swift in Sources */,
 				26C8B54922B227AF00D83413 /* GetQuoterWorker.swift in Sources */,
 				26C8B54522B2262700D83413 /* GetMyDetailWorker.swift in Sources */,
-				266D722222B792F300726EFA /* Setting.swift in Sources */,
+				266D722222B792F300726EFA /* MenuController.swift in Sources */,
+				266D722D22B7A39400726EFA /* ProfileUI.swift in Sources */,
+				266D723122B7A39400726EFA /* ProfileInteractor.swift in Sources */,
 				266AC5B82253014C00FCEE5A /* General.swift in Sources */,
 				266AC5B12253014C00FCEE5A /* knListView.swift in Sources */,
 				26D9898622AFA594007DA40D /* ExploreUI.swift in Sources */,
 				26D9899022AFB49A007DA40D /* BookDetailController.swift in Sources */,
 				264997E622B0A6E800C3BDF3 /* Quote.swift in Sources */,
 				266AC5BC2253014C00FCEE5A /* ServiceConnector.swift in Sources */,
+				266D722F22B7A39400726EFA /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

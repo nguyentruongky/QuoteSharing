@@ -12,6 +12,5 @@ extension UIColor {
     static let main = UIColor(r: 86, g: 98, b: 116)
     static let secondary = UIColor(r: 186, g: 193, b: 205)
     static let secondaryLight = UIColor(r: 241, g: 243, b: 245)
-//    static let c_193_205_247 = UIColor(r: 193, g: 205, b: 248)
 }
 

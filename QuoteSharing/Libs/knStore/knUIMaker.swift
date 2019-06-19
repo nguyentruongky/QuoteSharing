@@ -126,6 +126,13 @@ class UIMaker {
         button.setImage(image, for: .normal)
         return button
     }
+    
+    static func makeButton(imageName: String) -> UIButton {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: imageName), for: .normal)
+        return button
+    }
 
     static func makeMainButton(title: String,
                                bgColor: UIColor = UIColor.main,

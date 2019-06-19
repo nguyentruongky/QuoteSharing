@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - ALCameraViewController (3.0.3)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -106,6 +107,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.2.0):
     - GoogleUtilities/Logger
+  - GPUImage (0.1.7)
   - "gRPC-C++ (0.0.9)":
     - "gRPC-C++/Implementation (= 0.0.9)"
     - "gRPC-C++/Interface (= 0.0.9)"
@@ -132,9 +134,11 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.8.0)
+  - TesseractOCRiOS (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - ALCameraViewController
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -142,12 +146,15 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - Firebase/Storage
+  - GPUImage
   - GSMessages
   - Kingfisher
+  - TesseractOCRiOS
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - ALCameraViewController
     - BoringSSL-GRPC
     - FacebookCore
     - FacebookLogin
@@ -165,6 +172,7 @@ SPEC REPOS:
     - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleUtilities
+    - GPUImage
     - "gRPC-C++"
     - gRPC-Core
     - GSMessages
@@ -173,9 +181,11 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - TesseractOCRiOS
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ALCameraViewController: 6398a9282057f709b87a1ecc52a83b48028ade64
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
   FacebookLogin: 94cdad6850e86a2b04704dedfe7674a7af8148eb
@@ -193,6 +203,7 @@ SPEC CHECKSUMS:
   FirebaseStorage: 926d41552072b9fee67aa645760f05f87b7ce604
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 996e0db07153674fd1b54b220fda3a3dc3547cba
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GSMessages: 05bedc25bd278a1bf4260d6de526de0fc84cfef7
@@ -201,7 +212,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
 
-PODFILE CHECKSUM: c482f77457f31eb95cd0a932bb42f54a9690f09f
+PODFILE CHECKSUM: 360b6ee53237c3ab928a5dc89bed65da6eaf4b00
 
 COCOAPODS: 1.6.1

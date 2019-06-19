@@ -36,7 +36,7 @@ class BookDetailController: knListController<QuoteCell, Quote> {
         
         let stickView = UIMaker.makeView(background: .white)
         view.insertSubview(stickView, at: 0)
-        stickView.height(400)
+        stickView.height(300)
         stickView.topSuperView()
         stickView.horizontalSuperview()
     }
@@ -69,7 +69,8 @@ class BookDetailController: knListController<QuoteCell, Quote> {
 
 private extension BookDetailController {
     @objc func addQuote() {
-        ui.addQuoteView.show(in: view, verticalSpace: -space * 3)
+        let containerView = navigationController?.view ?? view!
+        ui.addQuoteView.show(in: containerView, verticalSpace: -space * 5)
         ui.addQuoteView.textView.becomeFirstResponder()
     }
     

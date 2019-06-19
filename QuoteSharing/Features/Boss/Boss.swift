@@ -22,10 +22,15 @@ class Boss: UITabBarController {
         searchController.navigationItem.title = "Search"
         let searchNav = wrapToNavigation(controller: searchController, tabBarTitle: "Search", iconName: "search")
         
+        let menuController = MenuController()
+        menuController.navigationItem.title = "Search"
+        let menuNav = wrapToNavigation(controller: menuController, tabBarTitle: "Menu", iconName: "user")
+        
         
         viewControllers = [
             exploreNav,
             searchNav,
+            menuNav,
         ]
     }
     

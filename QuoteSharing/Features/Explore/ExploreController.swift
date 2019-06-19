@@ -47,13 +47,6 @@ class ExploreController: knStaticListController {
         GetNewBooks { [unowned self] (datasource) in
             self.didGetDataSuccess(books: datasource, shelf: self.ui.newBooksView)
         }.execute()
-        
-        GetReadingBooks { [unowned self] (datasource) in
-            if datasource.isEmpty { return }
-            let ui = self.ui
-            ui.yourShelfView.datasource = datasource
-            self.datasource.insert(ui.addShelf(ui.yourShelfView, shelfHeight: 400), at: 0)
-            }.execute()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

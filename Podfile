@@ -15,6 +15,10 @@ target 'QuoteSharing' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'GSMessages'
+  pod 'TesseractOCRiOS'
+  pod 'GPUImage'
+  pod 'ALCameraViewController'
+
   # Pods for QuoteSharing
 
 end

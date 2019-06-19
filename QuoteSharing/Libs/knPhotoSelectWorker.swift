@@ -15,19 +15,27 @@ fileprivate protocol knPhotoSelectorDelegate: class {
 
 fileprivate class knPhotoSelector : NSObject {
     var delegate: knPhotoSelectorDelegate?
-    func showSelection() {
-        
-        let pickPhoto = UIAlertAction(title: "Choose Photo", style: .default) { (action) in
-            self.pickImageFromPhotoLibrary()
-        }
-        
-        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { (action) in
-            self.takePhoto()
-        }
-        
+    var allowEditing: Bool = false
+    
+    func showSelection(allowChoosePhoto: Bool = true, allowEditing: Bool = false) {
+        self.allowEditing = allowEditing
         let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        menu.addAction(takePhoto)
-        menu.addAction(pickPhoto)
+
+        if allowChoosePhoto {
+            let pickPhoto = UIAlertAction(title: "Choose Photo", style: .default) { (action) in
+                self.pickImageFromPhotoLibrary()
+            }
+            menu.addAction(pickPhoto)
+
+        }
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { (action) in
+                self.takePhoto()
+            }
+            menu.addAction(takePhoto)
+        }
+        
         menu.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         delegate?.present(menu)
     }
@@ -54,15 +62,16 @@ extension knPhotoSelector: UINavigationControllerDelegate, UIImagePickerControll
         
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = allowEditing
         imagePicker.delegate = self
         delegate?.present(imagePicker)
     }
     
     func pickImageFromPhotoLibrary() {
-        
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
+        imagePicker.allowsEditing = allowEditing
         delegate?.present(imagePicker)
     }
 }
@@ -71,15 +80,20 @@ class knPhotoSelectorWorker {
     var successResponse : ((UIImage) -> Void)? = nil
     var selectedImage : UIImage?
     fileprivate var picker: knPhotoSelector?
-    
-    init(finishSelection: ((UIImage) -> Void)?) {
+    var allowChoosePhoto: Bool
+    var allowEditing: Bool
+    init(finishSelection: ((UIImage) -> Void)?,
+         allowChoosePhoto: Bool = true,
+         allowEditing: Bool = true) {
         successResponse = finishSelection
+        self.allowChoosePhoto = allowChoosePhoto
+        self.allowEditing = allowEditing
     }
     
     func execute() {
         picker = knPhotoSelector()
         picker?.delegate = self
-        picker?.showSelection()
+        picker?.showSelection(allowChoosePhoto: allowChoosePhoto, allowEditing: allowEditing)
     }
 }
 

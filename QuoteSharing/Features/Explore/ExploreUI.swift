@@ -13,7 +13,6 @@ extension ExploreController {
         let coverImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
         let mostReadBooksView = BookShelfView(name: "Most read")
         let newBooksView = BookShelfView(name: "New")
-        let yourShelfView = BookShelfView(name: "Your shelf")
     }
 }
 

@@ -40,7 +40,7 @@ class SearchController: GridController<BookCell, Book> {
         getData()
         
         stateView.setStateContent(state: .empty,
-                                  imageName: "books",
+                                  imageName: "no_books",
                                   title: "No books found",
                                   content: "Change your keyword or add your book")
         
