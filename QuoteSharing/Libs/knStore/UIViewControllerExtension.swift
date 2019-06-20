@@ -98,6 +98,7 @@ extension UIViewController {
         navigationItem.titleView?.addSubview(navTitleLabel)
         navTitleLabel.centerY(toView: navigationItem.titleView!)
         navTitleLabel.centerX(toView: navigationItem.titleView!)
+        navTitleLabel.width(screenWidth / 1.5)
     }
 }
 

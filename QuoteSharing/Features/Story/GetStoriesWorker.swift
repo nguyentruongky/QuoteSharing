@@ -13,6 +13,7 @@ class Story {
     var bookId: String?
     var quoteId: String?
     var quoteContent: String?
+    var bookTitle: String?
     var coverImage: String?
     var userAvatar: String?
     var timestamp: Double = 0

@@ -68,6 +68,7 @@ private extension StoryCell {
                 guard let rawData = snapshot?.data() else { return }
                 let cover = rawData["cover"] as? String
                 self.data?.coverImage = cover
+                self.data?.bookTitle = rawData["title"] as? String
                 self.coverImageView.downloadImage(from: cover)
         }
     }
@@ -107,9 +108,9 @@ class StoryView: knGridView<StoryCell, Story> {
     
     override func didSelectItem(at indexPath: IndexPath) {
         let data = datasource[indexPath.row]
-        let controller = BookDetailController()
+        let controller = StoryDetailController()
         controller.hidesBottomBarWhenPushed = true
-//        controller.setupData(data)
+        controller.setData(data)
         UIApplication.push(controller)
     }
 }

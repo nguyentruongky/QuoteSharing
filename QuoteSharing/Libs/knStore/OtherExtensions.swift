@@ -164,7 +164,8 @@ extension UITableView {
         if height == 0 {
             tableHeaderView = UIView()
             tableHeaderView?.addSubview(header)
-            header.fill(toView: tableHeaderView!)
+            tableHeaderView?.addConstraints(withFormat: "H:|[v0]-0@750-|", views: header)
+            tableHeaderView?.addConstraints(withFormat: "V:|[v0]", views: header)
             return
         }
         header.height(height)
@@ -177,12 +178,14 @@ extension UITableView {
     
     func updateHeaderHeight() {
         guard let headerView = tableHeaderView else { return }
+        headerView.layoutIfNeeded()
         let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
         var headerFrame = headerView.frame
         
         guard height != headerFrame.size.height else { return }
         headerFrame.size.height = height
         headerView.frame = headerFrame
+        headerView.height(height)
         tableHeaderView = headerView
     }
     

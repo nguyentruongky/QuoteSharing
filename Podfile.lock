@@ -108,6 +108,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.2.0):
     - GoogleUtilities/Logger
   - GPUImage (0.1.7)
+  - GrowingTextView (0.7.0)
   - "gRPC-C++ (0.0.9)":
     - "gRPC-C++/Implementation (= 0.0.9)"
     - "gRPC-C++/Interface (= 0.0.9)"
@@ -147,6 +148,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - GPUImage
+  - GrowingTextView
   - GSMessages
   - Kingfisher
   - TesseractOCRiOS
@@ -173,6 +175,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GPUImage
+    - GrowingTextView
     - "gRPC-C++"
     - gRPC-Core
     - GSMessages
@@ -204,6 +207,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 996e0db07153674fd1b54b220fda3a3dc3547cba
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GrowingTextView: b946b0d1c33e0953725b9695d14f144cc35b2031
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GSMessages: 05bedc25bd278a1bf4260d6de526de0fc84cfef7
@@ -214,6 +218,6 @@ SPEC CHECKSUMS:
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
 
-PODFILE CHECKSUM: 360b6ee53237c3ab928a5dc89bed65da6eaf4b00
+PODFILE CHECKSUM: 84d77258f30235289b0c3e1f236c6b87aeb6813a
 
 COCOAPODS: 1.6.1

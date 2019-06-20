@@ -310,7 +310,7 @@ extension UIView {
     public func verticalSuperview(space: CGFloat = 0, isActive: Bool = true)
         -> (top: NSLayoutConstraint, bottom: NSLayoutConstraint)? {
             guard let view = superview else { return nil }
-            return vertical(toView: view)
+            return vertical(toView: view, space: space)
     }
     
     @discardableResult

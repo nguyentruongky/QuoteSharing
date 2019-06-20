@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             controller = Boss()
             GetMyDetailWorker().execute()
         }
+        
         window!.rootViewController = controller
         window!.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()

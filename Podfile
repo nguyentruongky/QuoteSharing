@@ -18,6 +18,7 @@ target 'QuoteSharing' do
   pod 'TesseractOCRiOS'
   pod 'GPUImage'
   pod 'ALCameraViewController'
+  pod 'GrowingTextView'
 
   # Pods for QuoteSharing
 
