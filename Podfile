@@ -17,7 +17,8 @@ target 'QuoteSharing' do
   pod 'GSMessages'
   pod 'TesseractOCRiOS'
   pod 'GPUImage'
-  pod 'ALCameraViewController'
+  pod 'ALCameraViewController', :git => 'https://github.com/nguyentruongky/ALCameraViewController.git', :commit => '6c6ad27e3a539c99b815eeeb536d94a135b46c86'
+
   pod 'GrowingTextView'
 
   # Pods for QuoteSharing

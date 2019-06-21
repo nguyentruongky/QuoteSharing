@@ -139,7 +139,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - ALCameraViewController
+  - ALCameraViewController (from `https://github.com/nguyentruongky/ALCameraViewController.git`, commit `6c6ad27e3a539c99b815eeeb536d94a135b46c86`)
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -156,7 +156,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - ALCameraViewController
     - BoringSSL-GRPC
     - FacebookCore
     - FacebookLogin
@@ -186,9 +185,19 @@ SPEC REPOS:
     - Protobuf
     - TesseractOCRiOS
 
+EXTERNAL SOURCES:
+  ALCameraViewController:
+    :commit: 6c6ad27e3a539c99b815eeeb536d94a135b46c86
+    :git: https://github.com/nguyentruongky/ALCameraViewController.git
+
+CHECKOUT OPTIONS:
+  ALCameraViewController:
+    :commit: 6c6ad27e3a539c99b815eeeb536d94a135b46c86
+    :git: https://github.com/nguyentruongky/ALCameraViewController.git
+
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  ALCameraViewController: 6398a9282057f709b87a1ecc52a83b48028ade64
+  ALCameraViewController: f4a52c7b2d75df179d5e34c1c5c4a2a219c8f368
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
   FacebookLogin: 94cdad6850e86a2b04704dedfe7674a7af8148eb
@@ -218,6 +227,6 @@ SPEC CHECKSUMS:
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
 
-PODFILE CHECKSUM: 84d77258f30235289b0c3e1f236c6b87aeb6813a
+PODFILE CHECKSUM: fd672b98244161fef0b90de4f6c4b4177adc40e9
 
 COCOAPODS: 1.6.1

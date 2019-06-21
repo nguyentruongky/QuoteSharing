@@ -8,25 +8,40 @@
 
 import UIKit
 class Comment {
+    var quoteId: String?
+    var commentId: String?
     var userId: String?
     var avatar: String?
     var readerName: String?
     var content: String?
     var timestamp: String?
     var timeString: String?
+    
+    init(raw: AnyObject) {
+        quoteId = raw["quoteId"] as? String
+        commentId = raw["commentId"] as? String
+        content = raw["content"] as? String
+        userId = raw["userId"] as? String
+        if let timestamp = raw["timestamp"] as? Double {
+            self.timestamp = String(timestamp)
+            let date = Date(timeIntervalSince1970: timestamp)
+            timeString = date.toString("dd/MM/yyyy")
+        }
+    }
 }
 
 class CommentCell: knListCell<Comment> {
     override var data: Comment? { didSet {
-        //        avatarImageView.downloadImage(from: data?.avatar)
-        //        quoterNameLabel.text = data?.readerName
-        //        contentLabel.text = data?.content
-        //        timestampLabel.text = data?.timeString
+        quoterNameLabel.text = data?.readerName
+        contentLabel.text = data?.content
+        timestampLabel.text = data?.timeString
         
-        avatarImageView.downloadImage(from: "https://avatars0.githubusercontent.com/u/932822?s=460&v=4")
-        quoterNameLabel.text = "Steve"
-        contentLabel.text = "If you are building your app with iOS 10 or newer, you need to add two privacy keys to your app to allow the usage of the camera and photo library, or your app will crash."
-        timestampLabel.text = "2 mins"
+        if data?.avatar != nil {
+            avatarImageView.downloadImage(from: data?.avatar)
+        } else {
+            guard let commenter = data?.userId else { return }
+            getQuoterAvatar(readerId: commenter)
+        }
         }}
     let avatarImageView = UIMaker.makeImageView(contentMode: .scaleAspectFill)
     let quoterNameLabel = UIMaker.makeLabel(font: .main(.semibold), color: .secondary)
@@ -52,6 +67,20 @@ class CommentCell: knListCell<Comment> {
         
         timestampLabel.rightSuperView(space: -space)
         timestampLabel.centerY(toView: quoterNameLabel)
+    }
+    
+    func getQuoterAvatar(readerId: String) {
+        DB().getCollection(.users)
+            .document(readerId)
+            .getDocument { (snapshot, err) in
+                guard let rawData = snapshot?.data() else { return }
+                self.data?.readerName = rawData["name"] as? String
+                self.quoterNameLabel.text = self.data?.readerName
+                
+                let avatar = rawData["avatar"] as? String
+                self.data?.avatar = avatar
+                self.avatarImageView.downloadImage(from: avatar)
+        }
     }
 }
 
